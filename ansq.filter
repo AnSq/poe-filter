@@ -1,0 +1,100 @@
+# chromatic items
+Show
+    LinkedSockets >= 3
+    SocketGroup "RGB"
+    SetBorderColor 255 255 255
+
+Show
+    Class Jewel
+    SetBorderColor 0 0 255
+
+Show
+    Class Flask
+    BaseType Divine Eternal
+    SetFontSize 40
+    SetBorderColor 255 255 255
+    PlayAlertSound 1 300
+
+# 20% quality normal items can be traded for quality improvement currency
+Show
+    Rarity Normal
+    Quality >= 20
+    #SetBorderColor 200 0 0
+    SetBackgroundColor 20 0 0 240
+    SetTextColor 220 0 0
+    SetFontSize 38
+    PlayAlertSound 2 300
+
+Show
+    Class Currency
+    SetBorderColor 100 100 0
+    SetBackgroundColor 10 10 0 240
+    PlayAlertSound 3 100
+
+Show
+    Class Map
+
+Show
+    Class "Quest Items"
+
+Show
+    Class Labyrinth
+
+Show
+    Class "Divination Card"
+
+Show
+    Class Jewel
+
+Show
+    Class Gem
+
+Show
+    Class "Utility Flask"
+    SetBorderColor 0 190 0
+    SetBackgroundColor 0 50 0 240
+    SetFontSize 36
+
+Show
+    Class "Hybrid Flask"
+    SetBorderColor 100 0 100
+    SetBackgroundColor 50 0 50 240
+
+Show
+    Class Flask
+
+Show
+    Rarity Unique
+
+Show
+    Rarity Rare
+
+Show
+    Rarity Magic
+
+Show
+    Sockets >= 5
+
+Show
+    LinkedSockets >= 4
+
+Show
+    SocketGroup "W"
+
+Show
+    BaseType "Two-Stone Ring"
+
+Show
+    BaseType "Unset Ring"
+
+Show
+    Class Hideout Microtransaction
+
+
+# quality items
+Show
+    Quality >= 1
+
+
+# hide everything else
+Hide
