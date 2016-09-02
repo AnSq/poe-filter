@@ -35,10 +35,80 @@ Show
     SetFontSize 38
     PlayAlertSound 2 300
 
+# Currency
 Show
     Class Currency
-    SetBorderColor 100 100 0
+    BaseType Fragment Shard
+    SetBorderColor 158 153 142
+    SetBackgroundColor 8 8 0 240
+    SetFontSize 24
+Show
+    Class Currency
+    BaseType Mirror Exalted Divine
+    SetBorderColor 255 192 45
+    SetTextColor 255 192 45
+    SetBackgroundColor 40 20 0 240
+    SetFontSize 45
+    PlayAlertSound 3 300
+Show
+    Class Currency
+    BaseType Prism Regal Vaal
+    SetBorderColor 243 187 56
+    SetTextColor 243 187 56
     SetBackgroundColor 10 10 0 240
+    SetFontSize 43
+    PlayAlertSound 3 250
+Show
+    Class Currency
+    BaseType Regret Blessed Chaos Scouring Bauble Silver
+    SetBorderColor 231 180 68
+    SetTextColor 231 180 68
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 41
+    PlayAlertSound 3 150
+Show
+    Class Currency
+    BaseType Fusing Alchemy Chisel
+    SetBorderColor 219 177 80
+    SetTextColor 219 177 80
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 39
+    PlayAlertSound 3 100
+Show
+    Class Currency
+    BaseType Chance Jeweller
+    SetBorderColor 206 172 93
+    SetTextColor 206 172 93
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 37
+    PlayAlertSound 3 50
+Show
+    Class Currency
+    BaseType Chromatic Alteration
+    SetBorderColor 194 167 105
+    SetTextColor 194 167 105
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 35
+    PlayAlertSound 3 25
+Show
+    Class Currency
+    BaseType Augmentation Scrap Whetstone Transmutation
+    SetBorderColor 182 163 118
+    SetTextColor 182 163 118
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 33
+    PlayAlertSound 3 10
+Show
+    Class Currency
+    BaseType Portal Wisdom
+    SetBorderColor 170 158 130
+    SetTextColor 170 158 130
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 33
+Show
+    Class Currency
+    SetBorderColor 200 200 0
+    SetBackgroundColor 30 30 0 240
     #PlayAlertSound 3 100
 
 Show
@@ -81,7 +151,7 @@ Show
     BaseType "Added Chaos Damage Support" "Added Fire Damage Support" "Additional Accuracy Support" "Ancestral Protector" "Ancestral Warchief" "Anger" "Barrage" "Bear Trap" "Blast Rain" "Blind Support" "Blink Arrow" "Block Chance Reduction Support" "Blood Magic Support" "Blood Rage" "Bloodlust Support" "Burning Arrow" "Caustic Arrow" "Chance to Flee Support" "Cleave" "Cyclone" "Decoy Totem" "Determination" "Detonate Mines" "Dominating Blow" "Double Strike" "Dual Strike" "Earthquake" "Elemental Hit" "Empower Support" "Endurance Charge on Melee Stun Support" "Enduring Cry" "Enhance Support" "Enlighten Support" "Explosive Arrow" "Faster Attacks Support" "Flicker Strike" "Fortify Support" "Freeze Mine" "Frenzy" "Frost Blades" "Glacial Hammer" "Grace" "Ground Slam" "Haste" "Heavy Strike" "Herald of Ash" "Ice Crash" "Ice Shot" "Immortal Call" "Increased Duration Support" "Infernal Blow" "Iron Grip Support" "Iron Will Support" "Item Quantity Support" "Knockback Support" "Lacerate" "Leap Slam" "Less Duration Support" "Life Gain on Hit Support" "Life Leech Support" "Lightning Arrow" "Lightning Strike" "Melee Damage on Full Life Support" "Mirror Arrow" "Molten Shell" "Molten Strike" "Phase Run" "Physical Projectile Attack Damage Support" "Physical to Lightning Support" "Poacher's Mark" "Point Blank Support" "Poison Support" "Portal" "Projectile Weakness" "Puncture" "Purity of Fire" "Purity of Ice" "Rain of Arrows" "Ranged Attack Totem Support" "Reave" "Reckoning" "Reduced Mana Support" "Rejuvenation Totem" "Riposte" "Shield Charge" "Shrapnel Shot" "Siege Ballista" "Slower Projectiles Support" "Spectral Throw" "Split Arrow" "Static Strike" "Stun Support" "Sunder" "Sweep" "Temporal Chains" "Tornado Shot" "Vaal Arc" "Vaal Burning Arrow" "Vaal Clarity" "Vaal Cold Snap" "Vaal Cyclone" "Vaal Detonate Dead" "Vaal Discipline" "Vaal Double Strike" "Vaal Fireball" "Vaal Flameblast" "Vaal Glacial Hammer" "Vaal Grace" "Vaal Ground Slam" "Vaal Haste" "Vaal Ice Nova" "Vaal Immortal Call" "Vaal Lightning Strike" "Vaal Lightning Trap" "Vaal Lightning Warp" "Vaal Molten Shell" "Vaal Power Siphon" "Vaal Rain of Arrows" "Vaal Reave" "Vaal Righteous Fire" "Vaal Spark" "Vaal Spectral Throw" "Vaal Storm Call" "Vaal Summon Skeletons" "Vengeance" "Vigilant Strike" "Viper Strike" "Vitality" "Warlord's Mark" "Weapon Elemental Damage Support" "Whirling Blades" "Wild Strike"
     SetFontSize 36
     SetBorderColor 255 120 0
-    PlayAlertSound 5 200
+    PlayAlertSound 5 100
 
 # gems witch CAN buy
 Show
@@ -90,6 +160,11 @@ Show
     SetFontSize 20
     SetBorderColor 0 135 255
     PlayAlertSound 5 50
+
+Show
+    Class Flask
+    Quality >= 1
+    SetBorderColor 255 0 0
 
 Show
     Class "Utility Flask"
@@ -120,6 +195,7 @@ Show
     SetBorderColor 255 255 0
     PlayAlertSound 1 300
 
+# pretty sure these don't even drop, but they're available classes
 Show
     Class Hideout Microtransaction
 
@@ -145,7 +221,7 @@ Show
 Hide
 
 # fade and shrink everything else
-#Show
-#    SetFontSize 1
-#    SetBackgroundColor 64 64 64 128
-#    SetTextColor 128 128 128
+Show
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 128
+    SetTextColor 128 128 128
