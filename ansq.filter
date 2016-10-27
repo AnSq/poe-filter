@@ -1,6 +1,18 @@
 # specific items I'm looking for
-#Show
-#    SetBorderColor 255 127 128
+Show
+    BaseType "Gripped Gloves" "Vanguard Belt" "Spiked Gloves" "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Fingerless Silk Gloves"
+    SetBorderColor 255 127 128
+    SetFontSize 40
+
+# hammers for chisel recipe
+Show
+    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+    Rarity Normal
+    SetBorderColor 107 130 126
+
+Show
+    BaseType "Sacrificial Garb"
+    SetFontSize 48
 
 Show
     Sockets = 6
@@ -19,6 +31,12 @@ Show
 Show
     LinkedSockets >= 3
     SocketGroup "RGB"
+    Height < 4
+    SetBorderColor 255 255 255
+Hide
+    LinkedSockets >= 3
+    SocketGroup "RGB"
+    Height >= 4
     SetBorderColor 255 255 255
 
 Show
@@ -76,7 +94,7 @@ Show
     PlayAlertSound 3 250
 Show
     Class Currency
-    BaseType Regret Blessed Chaos Scouring Bauble Silver
+    BaseType Regret Blessed Chaos Scouring Bauble Silver Sextant Perandus
     SetBorderColor 231 180 68
     SetTextColor 231 180 68
     SetBackgroundColor 10 10 0 240
@@ -160,37 +178,21 @@ Show
     SetBorderColor 255 255 0
     PlayAlertSound 5 300
 
-## gems witch CAN'T buy
-#Show
-#    Class Gem
-#    BaseType "Added Chaos Damage Support" "Added Fire Damage Support" "Additional Accuracy Support" "Ancestral Protector" "Ancestral Warchief" "Anger" "Barrage" "Bear Trap" "Blast Rain" "Blind Support" "Blink Arrow" "Block Chance Reduction Support" "Blood Magic Support" "Blood Rage" "Bloodlust Support" "Burning Arrow" "Caustic Arrow" "Chance to Flee Support" "Cleave" "Cyclone" "Decoy Totem" "Determination" "Detonate Mines" "Dominating Blow" "Double Strike" "Dual Strike" "Earthquake" "Elemental Hit" "Empower Support" "Endurance Charge on Melee Stun Support" "Enduring Cry" "Enhance Support" "Enlighten Support" "Explosive Arrow" "Faster Attacks Support" "Flicker Strike" "Fortify Support" "Freeze Mine" "Frenzy" "Frost Blades" "Glacial Hammer" "Grace" "Ground Slam" "Haste" "Heavy Strike" "Herald of Ash" "Ice Crash" "Ice Shot" "Immortal Call" "Increased Duration Support" "Infernal Blow" "Iron Grip Support" "Iron Will Support" "Item Quantity Support" "Knockback Support" "Lacerate" "Leap Slam" "Less Duration Support" "Life Gain on Hit Support" "Life Leech Support" "Lightning Arrow" "Lightning Strike" "Melee Damage on Full Life Support" "Mirror Arrow" "Molten Shell" "Molten Strike" "Phase Run" "Physical Projectile Attack Damage Support" "Physical to Lightning Support" "Poacher's Mark" "Point Blank Support" "Poison Support" "Portal" "Projectile Weakness" "Puncture" "Purity of Fire" "Purity of Ice" "Rain of Arrows" "Ranged Attack Totem Support" "Reave" "Reckoning" "Reduced Mana Support" "Rejuvenation Totem" "Riposte" "Shield Charge" "Shrapnel Shot" "Siege Ballista" "Slower Projectiles Support" "Spectral Throw" "Split Arrow" "Static Strike" "Stun Support" "Sunder" "Sweep" "Temporal Chains" "Tornado Shot" "Vaal Arc" "Vaal Burning Arrow" "Vaal Clarity" "Vaal Cold Snap" "Vaal Cyclone" "Vaal Detonate Dead" "Vaal Discipline" "Vaal Double Strike" "Vaal Fireball" "Vaal Flameblast" "Vaal Glacial Hammer" "Vaal Grace" "Vaal Ground Slam" "Vaal Haste" "Vaal Ice Nova" "Vaal Immortal Call" "Vaal Lightning Strike" "Vaal Lightning Trap" "Vaal Lightning Warp" "Vaal Molten Shell" "Vaal Power Siphon" "Vaal Rain of Arrows" "Vaal Reave" "Vaal Righteous Fire" "Vaal Spark" "Vaal Spectral Throw" "Vaal Storm Call" "Vaal Summon Skeletons" "Vengeance" "Vigilant Strike" "Viper Strike" "Vitality" "Warlord's Mark" "Weapon Elemental Damage Support" "Whirling Blades" "Wild Strike"
-#    SetFontSize 36
-#    SetBorderColor 255 120 0
-#    PlayAlertSound 5 100
-#
-## gems witch CAN buy
-#Show
-#    Class Gem
-#    BaseType "Abyssal Cry" "Added Cold Damage Support" "Added Lightning Damage Support" "Animate Guardian" "Animate Weapon" "Arc" "Arctic Armour" "Arctic Breath" "Assassin's Mark" "Ball Lightning" "Blade Vortex" "Bladefall" "Blasphemy Support" "Bone Offering" "Cast On Critical Strike Support" "Cast on Death Support" "Cast on Melee Kill Support" "Cast when Damage Taken Support" "Cast when Stunned Support" "Chain Support" "Chance to Ignite Support" "Clarity" "Cluster Traps Support" "Cold Penetration Support" "Cold Snap" "Cold to Fire Support" "Concentrated Effect Support" "Conductivity" "Contagion" "Controlled Destruction Support" "Conversion Trap" "Convocation" "Culling Strike Support" "Curse On Hit Support" "Desecrate" "Detonate Dead" "Devouring Totem" "Discharge" "Discipline" "Elemental Focus Support" "Elemental Proliferation Support" "Elemental Weakness" "Enfeeble" "Essence Drain" "Ethereal Knives" "Faster Casting Support" "Faster Projectiles Support" "Fire Nova Mine" "Fire Penetration Support" "Fire Trap" "Fireball" "Firestorm" "Flame Dash" "Flame Surge" "Flame Totem" "Flameblast" "Flammability" "Flesh Offering" "Fork Support" "Freezing Pulse" "Frost Bomb" "Frost Wall" "Frostbite" "Frostbolt" "Generosity Support" "Glacial Cascade" "Greater Multiple Projectiles Support" "Hatred" "Herald of Ice" "Herald of Thunder" "Hypothermia Support" "Ice Bite Support" "Ice Nova" "Ice Spear" "Ice Trap" "Incinerate" "Increased Area of Effect Support" "Increased Burning Damage Support" "Increased Critical Damage Support" "Increased Critical Strikes Support" "Innervate Support" "Item Rarity Support" "Kinetic Blast" "Lesser Multiple Projectiles Support" "Lightning Penetration Support" "Lightning Tendrils" "Lightning Trap" "Lightning Warp" "Magma Orb" "Mana Leech Support" "Melee Physical Damage Support" "Melee Splash Support" "Minefield Support" "Minion Damage Support" "Minion Life Support" "Minion Speed Support" "Minion and Totem Elemental Resistance Support" "Multiple Traps Support" "Multistrike Support" "Orb of Storms" "Pierce Support" "Power Charge On Critical Support" "Power Siphon" "Punishment" "Purity of Elements" "Purity of Lightning" "Raise Spectre" "Raise Zombie" "Rallying Cry" "Rapid Decay Support" "Remote Mine Support" "Righteous Fire" "Searing Bond" "Shock Nova" "Shockwave Totem" "Smoke Mine" "Spark" "Spell Echo Support" "Spell Totem Support" "Spirit Offering" "Storm Call" "Summon Chaos Golem" "Summon Flame Golem" "Summon Ice Golem" "Summon Lightning Golem" "Summon Raging Spirit" "Summon Skeletons" "Summon Stone Golem" "Tempest Shield" "Trap Cooldown Support" "Trap Support" "Trap and Mine Damage Support" "Void Manipulation Support" "Vortex" "Vulnerability" "Wither" "Wrath"
-#    SetFontSize 20
-#    SetBorderColor 0 135 255
-#    PlayAlertSound 5 50
-
-# gems ranger CAN'T buy
+# gems that CANNOT be bought by Ranger or Duelist
 Show
     Class Gem
-    BaseType "Added Chaos Damage Support" "Added Lightning Damage Support" "Ancestral Protector" "Ancestral Warchief" "Animate Weapon" "Arc" "Arctic Breath" "Ball Lightning" "Blade Vortex" "Bladefall" "Block Chance Reduction Support" "Bone Offering" "Chance to Ignite Support" "Clarity" "Cold Snap" "Cold to Fire Support" "Concentrated Effect Support" "Conductivity" "Contagion" "Controlled Destruction Support" "Convocation" "Determination" "Detonate Mines" "Discipline" "Dominating Blow" "Earthquake" "Elemental Focus Support" "Elemental Weakness" "Empower Support" "Endurance Charge on Melee Stun Support" "Enfeeble" "Enhance Support" "Enlighten Support" "Essence Drain" "Ethereal Knives" "Faster Casting Support" "Fire Nova Mine" "Fire Penetration Support" "Fireball" "Firestorm" "Flame Dash" "Flame Surge" "Flame Totem" "Flameblast" "Flammability" "Flesh Offering" "Freezing Pulse" "Frost Bomb" "Frost Wall" "Frostbite" "Frostbolt" "Generosity Support" "Glacial Cascade" "Glacial Hammer" "Ground Slam" "Heavy Strike" "Ice Nova" "Ice Spear" "Ice Trap" "Immortal Call" "Incinerate" "Increased Burning Damage Support" "Increased Duration Support" "Infernal Blow" "Iron Will Support" "Item Quantity Support" "Item Rarity Support" "Kinetic Blast" "Knockback Support" "Less Duration Support" "Life Gain on Hit Support" "Lightning Penetration Support" "Lightning Tendrils" "Lightning Warp" "Magma Orb" "Melee Damage on Full Life Support" "Minefield Support" "Minion Damage Support" "Minion Life Support" "Minion Speed Support" "Minion and Totem Elemental Resistance Support" "Mirror Arrow" "Molten Shell" "Molten Strike" "Orb of Storms" "Portal" "Power Siphon" "Punishment" "Purity of Fire" "Purity of Lightning" "Raise Spectre" "Raise Zombie" "Reckoning" "Reduced Mana Support" "Rejuvenation Totem" "Righteous Fire" "Searing Bond" "Shield Charge" "Shock Nova" "Shockwave Totem" "Spark" "Spell Totem Support" "Spirit Offering" "Storm Call" "Stun Support" "Summon Raging Spirit" "Summon Skeletons" "Sunder" "Sweep" "Tempest Shield" "Vaal Arc" "Vaal Burning Arrow" "Vaal Clarity" "Vaal Cold Snap" "Vaal Cyclone" "Vaal Detonate Dead" "Vaal Discipline" "Vaal Double Strike" "Vaal Fireball" "Vaal Flameblast" "Vaal Glacial Hammer" "Vaal Grace" "Vaal Ground Slam" "Vaal Haste" "Vaal Ice Nova" "Vaal Immortal Call" "Vaal Lightning Strike" "Vaal Lightning Trap" "Vaal Lightning Warp" "Vaal Molten Shell" "Vaal Power Siphon" "Vaal Rain of Arrows" "Vaal Reave" "Vaal Righteous Fire" "Vaal Spark" "Vaal Spectral Throw" "Vaal Storm Call" "Vaal Summon Skeletons" "Vengeance" "Vitality" "Void Manipulation Support" "Vortex" "Vulnerability" "Warlord's Mark" "Wither"
+    BaseType "Added Chaos Damage Support" "Added Lightning Damage Support" "Animate Weapon" "Arc" "Arctic Breath" "Ball Lightning" "Blade Vortex" "Bladefall" "Block Chance Reduction Support" "Bone Offering" "Chance to Ignite Support" "Clarity" "Cold Snap" "Cold to Fire Support" "Concentrated Effect Support" "Conductivity" "Contagion" "Controlled Destruction Support" "Convocation" "Detonate Mines" "Discipline" "Elemental Focus Support" "Elemental Weakness" "Empower Support" "Enfeeble" "Enhance Support" "Enlighten Support" "Essence Drain" "Ethereal Knives" "Faster Casting Support" "Fire Nova Mine" "Fire Penetration Support" "Fireball" "Firestorm" "Flame Dash" "Flame Surge" "Flame Totem" "Flameblast" "Flammability" "Flesh Offering" "Freezing Pulse" "Frost Bomb" "Frostbite" "Frostbolt" "Generosity Support" "Glacial Cascade" "Ice Nova" "Ice Spear" "Ice Trap" "Incinerate" "Increased Burning Damage Support" "Item Quantity Support" "Item Rarity Support" "Kinetic Blast" "Lightning Penetration Support" "Lightning Tendrils" "Lightning Warp" "Magma Orb" "Minefield Support" "Minion Damage Support" "Minion Life Support" "Minion Speed Support" "Minion and Totem Elemental Resistance Support" "Mirror Arrow" "Orb of Storms" "Portal" "Power Siphon" "Purity of Lightning" "Raise Spectre" "Raise Zombie" "Righteous Fire" "Searing Bond" "Shock Nova" "Shockwave Totem" "Spark" "Spell Totem Support" "Spirit Offering" "Storm Call" "Summon Raging Spirit" "Summon Skeletons" "Vaal Arc" "Vaal Burning Arrow" "Vaal Clarity" "Vaal Cold Snap" "Vaal Cyclone" "Vaal Detonate Dead" "Vaal Discipline" "Vaal Double Strike" "Vaal Fireball" "Vaal Flameblast" "Vaal Glacial Hammer" "Vaal Grace" "Vaal Ground Slam" "Vaal Haste" "Vaal Ice Nova" "Vaal Immortal Call" "Vaal Lightning Strike" "Vaal Lightning Trap" "Vaal Lightning Warp" "Vaal Molten Shell" "Vaal Power Siphon" "Vaal Rain of Arrows" "Vaal Reave" "Vaal Righteous Fire" "Vaal Spark" "Vaal Spectral Throw" "Vaal Storm Call" "Vaal Summon Skeletons" "Void Manipulation Support" "Vortex" "Wither"
     SetFontSize 36
     SetBorderColor 255 120 0
     PlayAlertSound 5 100
 
-# gems ranger CAN buy
+# gems that CAN be bought by Ranger or Duelist
 Show
     Class Gem
-    BaseType "Abyssal Cry" "Added Cold Damage Support" "Added Fire Damage Support" "Additional Accuracy Support" "Anger" "Animate Guardian" "Arctic Armour" "Assassin's Mark" "Barrage" "Bear Trap" "Blasphemy Support" "Blast Rain" "Blind Support" "Blink Arrow" "Blood Magic Support" "Blood Rage" "Bloodlust Support" "Burning Arrow" "Cast On Critical Strike Support" "Cast on Death Support" "Cast on Melee Kill Support" "Cast when Damage Taken Support" "Cast when Stunned Support" "Caustic Arrow" "Chain Support" "Chance to Flee Support" "Cleave" "Cluster Traps Support" "Cold Penetration Support" "Conversion Trap" "Culling Strike Support" "Curse On Hit Support" "Cyclone" "Decoy Totem" "Desecrate" "Detonate Dead" "Devouring Totem" "Discharge" "Double Strike" "Dual Strike" "Elemental Hit" "Elemental Proliferation Support" "Enduring Cry" "Explosive Arrow" "Faster Attacks Support" "Faster Projectiles Support" "Fire Trap" "Flicker Strike" "Fork Support" "Fortify Support" "Freeze Mine" "Frenzy" "Frost Blades" "Grace" "Greater Multiple Projectiles Support" "Haste" "Hatred" "Herald of Ash" "Herald of Ice" "Herald of Thunder" "Hypothermia Support" "Ice Bite Support" "Ice Crash" "Ice Shot" "Increased Area of Effect Support" "Increased Critical Damage Support" "Increased Critical Strikes Support" "Innervate Support" "Iron Grip Support" "Lacerate" "Leap Slam" "Lesser Multiple Projectiles Support" "Life Leech Support" "Lightning Arrow" "Lightning Strike" "Lightning Trap" "Mana Leech Support" "Melee Physical Damage Support" "Melee Splash Support" "Multiple Traps Support" "Multistrike Support" "Phase Run" "Physical Projectile Attack Damage Support" "Physical to Lightning Support" "Pierce Support" "Poacher's Mark" "Point Blank Support" "Poison Support" "Power Charge On Critical Support" "Projectile Weakness" "Puncture" "Purity of Elements" "Purity of Ice" "Rain of Arrows" "Rallying Cry" "Ranged Attack Totem Support" "Rapid Decay Support" "Reave" "Remote Mine Support" "Riposte" "Shrapnel Shot" "Siege Ballista" "Slower Projectiles Support" "Smoke Mine" "Spectral Throw" "Spell Echo Support" "Split Arrow" "Static Strike" "Summon Chaos Golem" "Summon Flame Golem" "Summon Ice Golem" "Summon Lightning Golem" "Summon Stone Golem" "Temporal Chains" "Tornado Shot" "Trap Cooldown Support" "Trap Support" "Trap and Mine Damage Support" "Vigilant Strike" "Viper Strike" "Weapon Elemental Damage Support" "Whirling Blades" "Wild Strike" "Wrath"
+    BaseType "Abyssal Cry" "Added Cold Damage Support" "Added Fire Damage Support" "Additional Accuracy Support" "Ancestral Protector" "Ancestral Warchief" "Anger" "Animate Guardian" "Arctic Armour" "Assassin's Mark" "Barrage" "Bear Trap" "Blasphemy Support" "Blast Rain" "Blind Support" "Blink Arrow" "Blood Magic Support" "Blood Rage" "Bloodlust Support" "Burning Arrow" "Cast On Critical Strike Support" "Cast on Death Support" "Cast on Melee Kill Support" "Cast when Damage Taken Support" "Cast when Stunned Support" "Caustic Arrow" "Chain Support" "Chance to Flee Support" "Cleave" "Cluster Traps Support" "Cold Penetration Support" "Conversion Trap" "Culling Strike Support" "Curse On Hit Support" "Cyclone" "Decoy Totem" "Desecrate" "Determination" "Detonate Dead" "Devouring Totem" "Discharge" "Dominating Blow" "Double Strike" "Dual Strike" "Earthquake" "Elemental Hit" "Elemental Proliferation Support" "Endurance Charge on Melee Stun Support" "Enduring Cry" "Explosive Arrow" "Faster Attacks Support" "Faster Projectiles Support" "Fire Trap" "Flicker Strike" "Fork Support" "Fortify Support" "Freeze Mine" "Frenzy" "Frost Blades" "Frost Wall" "Glacial Hammer" "Grace" "Greater Multiple Projectiles Support" "Ground Slam" "Haste" "Hatred" "Heavy Strike" "Herald of Ash" "Herald of Ice" "Herald of Thunder" "Hypothermia Support" "Ice Bite Support" "Ice Crash" "Ice Shot" "Immortal Call" "Increased Area of Effect Support" "Increased Critical Damage Support" "Increased Critical Strikes Support" "Increased Duration Support" "Infernal Blow" "Innervate Support" "Iron Grip Support" "Iron Will Support" "Knockback Support" "Lacerate" "Leap Slam" "Less Duration Support" "Lesser Multiple Projectiles Support" "Life Gain on Hit Support" "Life Leech Support" "Lightning Arrow" "Lightning Strike" "Lightning Trap" "Mana Leech Support" "Melee Damage on Full Life Support" "Melee Physical Damage Support" "Melee Splash Support" "Molten Shell" "Molten Strike" "Multiple Traps Support" "Multistrike Support" "Phase Run" "Physical Projectile Attack Damage Support" "Physical to Lightning Support" "Pierce Support" "Poacher's Mark" "Point Blank Support" "Poison Support" "Power Charge On Critical Support" "Projectile Weakness" "Puncture" "Punishment" "Purity of Elements" "Purity of Fire" "Purity of Ice" "Rain of Arrows" "Rallying Cry" "Ranged Attack Totem Support" "Rapid Decay Support" "Reave" "Reckoning" "Reduced Mana Support" "Rejuvenation Totem" "Remote Mine Support" "Riposte" "Shield Charge" "Shrapnel Shot" "Siege Ballista" "Slower Projectiles Support" "Smoke Mine" "Spectral Throw" "Spell Echo Support" "Split Arrow" "Static Strike" "Stun Support" "Summon Chaos Golem" "Summon Flame Golem" "Summon Ice Golem" "Summon Lightning Golem" "Summon Stone Golem" "Sunder" "Sweep" "Tempest Shield" "Temporal Chains" "Tornado Shot" "Trap Cooldown Support" "Trap Support" "Trap and Mine Damage Support" "Vengeance" "Vigilant Strike" "Viper Strike" "Vitality" "Vulnerability" "Warlord's Mark" "Weapon Elemental Damage Support" "Whirling Blades" "Wild Strike" "Wrath"
     SetFontSize 20
     SetBorderColor 0 135 255
-    PlayAlertSound 5 50
+    #PlayAlertSound 5 50
 
 
 Show
@@ -202,18 +204,13 @@ Show
     Class "Utility Flask"
     SetBorderColor 0 190 0
     SetBackgroundColor 0 50 0 240
-    SetFontSize 36
-
-#Show
-#    Class "Hybrid Flask"
-#    SetBorderColor 100 0 100
-#    SetBackgroundColor 50 0 50 240
+    #SetFontSize 36
 
 Show
-    Sockets >= 5
+    Sockets >= 6
 
 Show
-    LinkedSockets >= 4
+    LinkedSockets >= 5
 
 Show
     SocketGroup "W"
@@ -225,18 +222,18 @@ Show
 Show
     Class Hideout Microtransaction
 
+Show # high-end base type rares
+    Rarity Rare
+    BaseType "Imperial Claw" "Terror Claw" "Gemini Claw"   "Imperial Skean" "Demon Dagger" "Sai"   "Royal Axe" "Infernal Axe" "Runic Hatchet"   "Auric Mace" "Nightmare Mace" "Behemoth Mace"   "Carnal Sceptre" "Void Sceptre" "Sambar Sceptre"   "Eternal Sword" "Midnight Blade" "Tiger Hook"   "Jewelled Foil" "Harpy Rapier" "Dragoon Sword"   "Tornado Wand" "Prophecy Wand" "Profane Wand"      "Imperial Bow" "Harbinger Bow" "Maraketh Bow"   "Imperial Staff" "Judgement Staff" "Eclipse Staff"   "Despot Axe" "Void Axe" "Fleshripper"   "Imperial Maul" "Terror Maul" "Coronal Maul"   "Lion Sword" "Infernal Sword" "Exquisite Blade"         "Astral Plate" "Gladiator Plate" "Glorious Plate"   "Exquisite Leather" "Zodiac Leather" "Assassin's Garb"   "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia"   "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar"   "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail"   "Blood Raiment" "Sadist Garb" "Carnal Armour"      "Vaal Greaves" "Titan Greaves"   "Stealth Boots" "Slink Boots"   "Arcanist Slippers" "Sorcerer Boots"   "Hydrascale Boots" "Dragonscale Boots"   "Legion Boots" "Crusader Boots"   "Assassin's Boots" "Murder Boots"      "Vaal Gauntlets" "Titan Gauntlets"   "Stealth Gloves" "Slink Gloves"   "Arcanist Gloves" "Sorcerer Gloves"   "Hydrascale Gauntlets" "Dragonscale Gauntlets"   "Legion Gloves" "Crusader Gloves"   "Assassin's Mitts" "Murder Mitts"      "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet"   "Silken Hood" "Sinner Tricorne" "Lion Pelt"   "Solaris Circlet" "Mind Cage" "Hubris Circlet"   "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet"   "Magistrate Crown" "Prophet Crown" "Praetor Crown"   "Harlequin Mask" "Vaal Mask" "Deicide Mask"      "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield"   "Vaal Buckler" "Crusader Buckler" "Imperial Buckler"   "Vaal Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield"   "Spiny Round Shield" "Cardinal Round Shield" "Elegant Round Shield"   "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield"   "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"
+    SetFontSize 38
+    SetBackgroundColor 25 25 0 240
+    SetBorderColor 100 100 0 240
 Show
     Rarity Rare
-
-#Show
-#    Rarity Magic
 
 Show
     Rarity Unique
     SetFontSize 45
-
-#Show
-#    Class Flask
 
 ## maximum sockets for one handed items
 #Show
@@ -252,7 +249,7 @@ Show
 # base types to chance
 Show
     Rarity Normal
-    BaseType "Sorcerer Boots"
+    BaseType "Sorcerer Boots" "Occultist's Vestment"
     SetBorderColor 175 96 37
 
 
