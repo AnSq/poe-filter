@@ -1,65 +1,69 @@
-# specific items I'm looking for
-Show
-    BaseType "Gripped Gloves" "Vanguard Belt" "Spiked Gloves" "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Fingerless Silk Gloves"
-    SetBorderColor 255 127 128
-    SetFontSize 40
-
-# hammers for chisel recipe
-Show
-    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
-    Rarity Normal
-    SetBorderColor 107 130 126
-
-Show
-    BaseType "Sacrificial Garb"
-    SetFontSize 48
-
-Show
-    Sockets = 6
-    LinkedSockets = 6
-    SetFontSize 45
-    SetBorderColor 255 0 0 0
-    PlayAlertSound 1 300
-
-Show
-    Sockets = 6
-    SetFontSize 42
-    SetBorderColor 100 250 80
-    PlayAlertSound 7 300
-
-# chromatic items
-Show
-    LinkedSockets >= 3
-    SocketGroup "RGB"
-    Height < 4
-    SetBorderColor 255 255 255
-Hide
-    LinkedSockets >= 3
-    SocketGroup "RGB"
-    Height >= 4
-    SetBorderColor 255 255 255
-
-Show
-    Class Jewel
-    SetBorderColor 0 0 255
-
-# 20% quality normal items can be traded for quality improvement currency
-Show
-    Rarity Normal
-    Quality >= 20
-    #SetBorderColor 200 0 0
-    SetBackgroundColor 20 0 0 240
-    SetTextColor 220 0 0
-    SetFontSize 38
-    PlayAlertSound 2 300
+### ========== Currency ==================================================== ###
 
 # Currency
 Show
     Class Currency
-    BaseType Fragment Shard
-    SetBorderColor 158 153 142
-    SetBackgroundColor 8 8 0 240
-    SetFontSize 24
+    BaseType Portal Wisdom
+    SetBorderColor 170 158 130
+    SetTextColor 170 158 130
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 33
+Show
+    Class Currency
+    BaseType Augmentation Scrap Whetstone Transmutation
+    SetBorderColor 182 163 118
+    SetTextColor 182 163 118
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 33
+    PlayAlertSound 3 10
+Show
+    Class Currency
+    BaseType Chromatic Alteration
+    SetBorderColor 194 167 105
+    SetTextColor 194 167 105
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 35
+    PlayAlertSound 3 25
+Show
+    Class Currency
+    BaseType Chance Jeweller
+    SetBorderColor 206 172 93
+    SetTextColor 206 172 93
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 37
+    PlayAlertSound 3 50
+Show
+    Class Currency
+    BaseType Fusing Alchemy Chisel Bauble
+    SetBorderColor 219 177 80
+    SetTextColor 219 177 80
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 39
+    PlayAlertSound 3 100
+Show
+    Class Currency
+    BaseType Regret Blessed Chaos Scouring Silver Sextant Perandus Deck
+    SetBorderColor 231 180 68
+    SetTextColor 231 180 68
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 41
+    PlayAlertSound 3 150
+Show
+    Class Currency
+    BaseType Prism Regal Vaal Divine
+    SetBorderColor 243 187 56
+    SetTextColor 243 187 56
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 43
+    PlayAlertSound 3 250
+Show
+    Class Currency
+    BaseType Mirror Exalted
+    SetBorderColor 255 192 45
+    SetTextColor 255 192 45
+    SetBackgroundColor 40 20 0 240
+    SetFontSize 45
+    PlayAlertSound 1 300
 Show
     Class Currency
     BaseType Essence
@@ -78,72 +82,64 @@ Show
     PlayAlertSound 4 300
 Show
     Class Currency
-    BaseType Mirror Exalted Divine
-    SetBorderColor 255 192 45
-    SetTextColor 255 192 45
-    SetBackgroundColor 40 20 0 240
-    SetFontSize 45
-    PlayAlertSound 3 300
-Show
-    Class Currency
-    BaseType Prism Regal Vaal
-    SetBorderColor 243 187 56
-    SetTextColor 243 187 56
-    SetBackgroundColor 10 10 0 240
-    SetFontSize 43
-    PlayAlertSound 3 250
-Show
-    Class Currency
-    BaseType Regret Blessed Chaos Scouring Bauble Silver Sextant Perandus
-    SetBorderColor 231 180 68
-    SetTextColor 231 180 68
-    SetBackgroundColor 10 10 0 240
-    SetFontSize 41
-    PlayAlertSound 3 150
-Show
-    Class Currency
-    BaseType Fusing Alchemy Chisel
-    SetBorderColor 219 177 80
-    SetTextColor 219 177 80
-    SetBackgroundColor 10 10 0 240
-    SetFontSize 39
-    PlayAlertSound 3 100
-Show
-    Class Currency
-    BaseType Chance Jeweller
-    SetBorderColor 206 172 93
-    SetTextColor 206 172 93
-    SetBackgroundColor 10 10 0 240
-    SetFontSize 37
-    PlayAlertSound 3 50
-Show
-    Class Currency
-    BaseType Chromatic Alteration
-    SetBorderColor 194 167 105
-    SetTextColor 194 167 105
-    SetBackgroundColor 10 10 0 240
-    SetFontSize 35
-    PlayAlertSound 3 25
-Show
-    Class Currency
-    BaseType Augmentation Scrap Whetstone Transmutation
-    SetBorderColor 182 163 118
-    SetTextColor 182 163 118
-    SetBackgroundColor 10 10 0 240
-    SetFontSize 33
-    PlayAlertSound 3 10
-Show
-    Class Currency
-    BaseType Portal Wisdom
-    SetBorderColor 170 158 130
-    SetTextColor 170 158 130
-    SetBackgroundColor 10 10 0 240
-    SetFontSize 33
+    BaseType Fragment Shard
+    SetBorderColor 158 153 142
+    SetBackgroundColor 8 8 0 240
+    SetFontSize 24
 Show
     Class Currency
     SetBorderColor 200 200 0
     SetBackgroundColor 30 30 0 240
     #PlayAlertSound 3 100
+
+
+### ========== Sockets 1 =================================================== ###
+
+# chromatic items
+Show
+    LinkedSockets >= 3
+    SocketGroup "RGB"
+    Height < 4
+    SetBorderColor 255 255 255
+#Hide
+Show
+    LinkedSockets >= 3
+    SocketGroup "RGB"
+    Height >= 4
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 128
+    SetTextColor 128 128 128
+
+Show
+    SocketGroup "W"
+    SetFontSize 40
+    SetBorderColor 255 255 0
+    PlayAlertSound 1 100
+
+
+### ========== Normal Items ================================================ ###
+
+# 20% quality normal items can be traded for quality improvement currency
+Show
+    Rarity Normal
+    Quality >= 20
+    #SetBorderColor 200 0 0
+    SetBackgroundColor 20 0 0 240
+    SetTextColor 220 0 0
+    SetFontSize 38
+    PlayAlertSound 2 300
+
+# base types to chance
+Show
+    Rarity Normal
+    BaseType "Sorcerer Boots" "Occultist's Vestment"
+    SetBorderColor 175 96 37
+
+# hammers for chisel recipe
+Show
+    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+    Rarity Normal
+    SetBorderColor 107 130 126
 
 Show
     Class Map
@@ -151,16 +147,42 @@ Show
     SetFontSize 40
 
 Show
-    Class "Quest Items" Labyrinth
-    SetFontSize 40
-
-Show
-    Class "Divination Card"
-    SetFontSize 40
-    PlayAlertSound 4 200
-
-Show
     Class Jewel
+    SetBorderColor 0 0 255
+
+# new base types
+Show
+    BaseType "Gripped Gloves" "Vanguard Belt" "Spiked Gloves" "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Fingerless Silk Gloves"
+    SetBorderColor 255 127 128
+    SetFontSize 40
+
+Show
+    BaseType "Sacrificial Garb"
+    SetFontSize 48
+
+#Hide
+Show
+    Rarity Normal
+    Sockets < 6
+    LinkedSockets < 5
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 128
+    SetTextColor 128 128 128
+
+
+### ========== Rare Items ================================================== ###
+
+Show # high-end base type rares
+    Rarity Rare
+    BaseType "Imperial Claw" "Terror Claw" "Gemini Claw"   "Imperial Skean" "Demon Dagger" "Sai"   "Royal Axe" "Infernal Axe" "Runic Hatchet"   "Auric Mace" "Nightmare Mace" "Behemoth Mace"   "Carnal Sceptre" "Void Sceptre" "Sambar Sceptre"   "Eternal Sword" "Midnight Blade" "Tiger Hook"   "Jewelled Foil" "Harpy Rapier" "Dragoon Sword"   "Tornado Wand" "Prophecy Wand" "Profane Wand"      "Imperial Bow" "Harbinger Bow" "Maraketh Bow"   "Imperial Staff" "Judgement Staff" "Eclipse Staff"   "Despot Axe" "Void Axe" "Fleshripper"   "Imperial Maul" "Terror Maul" "Coronal Maul"   "Lion Sword" "Infernal Sword" "Exquisite Blade"         "Astral Plate" "Gladiator Plate" "Glorious Plate"   "Exquisite Leather" "Zodiac Leather" "Assassin's Garb"   "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia"   "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar"   "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail"   "Blood Raiment" "Sadist Garb" "Carnal Armour"      "Vaal Greaves" "Titan Greaves"   "Stealth Boots" "Slink Boots"   "Arcanist Slippers" "Sorcerer Boots"   "Hydrascale Boots" "Dragonscale Boots"   "Legion Boots" "Crusader Boots"   "Assassin's Boots" "Murder Boots"      "Vaal Gauntlets" "Titan Gauntlets"   "Stealth Gloves" "Slink Gloves"   "Arcanist Gloves" "Sorcerer Gloves"   "Hydrascale Gauntlets" "Dragonscale Gauntlets"   "Legion Gloves" "Crusader Gloves"   "Assassin's Mitts" "Murder Mitts"      "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet"   "Silken Hood" "Sinner Tricorne" "Lion Pelt"   "Solaris Circlet" "Mind Cage" "Hubris Circlet"   "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet"   "Magistrate Crown" "Prophet Crown" "Praetor Crown"   "Harlequin Mask" "Vaal Mask" "Deicide Mask"      "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield"   "Vaal Buckler" "Crusader Buckler" "Imperial Buckler"   "Vaal Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield"   "Spiny Round Shield" "Cardinal Round Shield" "Elegant Round Shield"   "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield"   "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"
+    SetFontSize 38
+    SetBackgroundColor 25 25 0 240
+    SetBorderColor 100 100 0 240
+Show
+    Rarity Rare
+
+
+### ========== Gems ======================================================== ###
 
 # superior gems
 Show
@@ -170,30 +192,21 @@ Show
     SetBorderColor 255 0 0
     PlayAlertSound 5 200
 
-# special drop-only supports
+# drop-only
 Show
     Class Gem
-    BaseType Empower Enhance Enlighten
+    BaseType Empower Enhance Enlighten Portal
     SetFontSize 42
     SetBorderColor 255 255 0
     PlayAlertSound 5 300
 
-# gems that CANNOT be bought by Ranger or Duelist
 Show
     Class Gem
-    BaseType "Added Chaos Damage Support" "Added Lightning Damage Support" "Animate Weapon" "Arc" "Arctic Breath" "Ball Lightning" "Blade Vortex" "Bladefall" "Block Chance Reduction Support" "Bone Offering" "Chance to Ignite Support" "Clarity" "Cold Snap" "Cold to Fire Support" "Concentrated Effect Support" "Conductivity" "Contagion" "Controlled Destruction Support" "Convocation" "Detonate Mines" "Discipline" "Elemental Focus Support" "Elemental Weakness" "Empower Support" "Enfeeble" "Enhance Support" "Enlighten Support" "Essence Drain" "Ethereal Knives" "Faster Casting Support" "Fire Nova Mine" "Fire Penetration Support" "Fireball" "Firestorm" "Flame Dash" "Flame Surge" "Flame Totem" "Flameblast" "Flammability" "Flesh Offering" "Freezing Pulse" "Frost Bomb" "Frostbite" "Frostbolt" "Generosity Support" "Glacial Cascade" "Ice Nova" "Ice Spear" "Ice Trap" "Incinerate" "Increased Burning Damage Support" "Item Quantity Support" "Item Rarity Support" "Kinetic Blast" "Lightning Penetration Support" "Lightning Tendrils" "Lightning Warp" "Magma Orb" "Minefield Support" "Minion Damage Support" "Minion Life Support" "Minion Speed Support" "Minion and Totem Elemental Resistance Support" "Mirror Arrow" "Orb of Storms" "Portal" "Power Siphon" "Purity of Lightning" "Raise Spectre" "Raise Zombie" "Righteous Fire" "Searing Bond" "Shock Nova" "Shockwave Totem" "Spark" "Spell Totem Support" "Spirit Offering" "Storm Call" "Summon Raging Spirit" "Summon Skeletons" "Vaal Arc" "Vaal Burning Arrow" "Vaal Clarity" "Vaal Cold Snap" "Vaal Cyclone" "Vaal Detonate Dead" "Vaal Discipline" "Vaal Double Strike" "Vaal Fireball" "Vaal Flameblast" "Vaal Glacial Hammer" "Vaal Grace" "Vaal Ground Slam" "Vaal Haste" "Vaal Ice Nova" "Vaal Immortal Call" "Vaal Lightning Strike" "Vaal Lightning Trap" "Vaal Lightning Warp" "Vaal Molten Shell" "Vaal Power Siphon" "Vaal Rain of Arrows" "Vaal Reave" "Vaal Righteous Fire" "Vaal Spark" "Vaal Spectral Throw" "Vaal Storm Call" "Vaal Summon Skeletons" "Void Manipulation Support" "Vortex" "Wither"
-    SetFontSize 36
-    SetBorderColor 255 120 0
-    PlayAlertSound 5 100
-
-# gems that CAN be bought by Ranger or Duelist
-Show
-    Class Gem
-    BaseType "Abyssal Cry" "Added Cold Damage Support" "Added Fire Damage Support" "Additional Accuracy Support" "Ancestral Protector" "Ancestral Warchief" "Anger" "Animate Guardian" "Arctic Armour" "Assassin's Mark" "Barrage" "Bear Trap" "Blasphemy Support" "Blast Rain" "Blind Support" "Blink Arrow" "Blood Magic Support" "Blood Rage" "Bloodlust Support" "Burning Arrow" "Cast On Critical Strike Support" "Cast on Death Support" "Cast on Melee Kill Support" "Cast when Damage Taken Support" "Cast when Stunned Support" "Caustic Arrow" "Chain Support" "Chance to Flee Support" "Cleave" "Cluster Traps Support" "Cold Penetration Support" "Conversion Trap" "Culling Strike Support" "Curse On Hit Support" "Cyclone" "Decoy Totem" "Desecrate" "Determination" "Detonate Dead" "Devouring Totem" "Discharge" "Dominating Blow" "Double Strike" "Dual Strike" "Earthquake" "Elemental Hit" "Elemental Proliferation Support" "Endurance Charge on Melee Stun Support" "Enduring Cry" "Explosive Arrow" "Faster Attacks Support" "Faster Projectiles Support" "Fire Trap" "Flicker Strike" "Fork Support" "Fortify Support" "Freeze Mine" "Frenzy" "Frost Blades" "Frost Wall" "Glacial Hammer" "Grace" "Greater Multiple Projectiles Support" "Ground Slam" "Haste" "Hatred" "Heavy Strike" "Herald of Ash" "Herald of Ice" "Herald of Thunder" "Hypothermia Support" "Ice Bite Support" "Ice Crash" "Ice Shot" "Immortal Call" "Increased Area of Effect Support" "Increased Critical Damage Support" "Increased Critical Strikes Support" "Increased Duration Support" "Infernal Blow" "Innervate Support" "Iron Grip Support" "Iron Will Support" "Knockback Support" "Lacerate" "Leap Slam" "Less Duration Support" "Lesser Multiple Projectiles Support" "Life Gain on Hit Support" "Life Leech Support" "Lightning Arrow" "Lightning Strike" "Lightning Trap" "Mana Leech Support" "Melee Damage on Full Life Support" "Melee Physical Damage Support" "Melee Splash Support" "Molten Shell" "Molten Strike" "Multiple Traps Support" "Multistrike Support" "Phase Run" "Physical Projectile Attack Damage Support" "Physical to Lightning Support" "Pierce Support" "Poacher's Mark" "Point Blank Support" "Poison Support" "Power Charge On Critical Support" "Projectile Weakness" "Puncture" "Punishment" "Purity of Elements" "Purity of Fire" "Purity of Ice" "Rain of Arrows" "Rallying Cry" "Ranged Attack Totem Support" "Rapid Decay Support" "Reave" "Reckoning" "Reduced Mana Support" "Rejuvenation Totem" "Remote Mine Support" "Riposte" "Shield Charge" "Shrapnel Shot" "Siege Ballista" "Slower Projectiles Support" "Smoke Mine" "Spectral Throw" "Spell Echo Support" "Split Arrow" "Static Strike" "Stun Support" "Summon Chaos Golem" "Summon Flame Golem" "Summon Ice Golem" "Summon Lightning Golem" "Summon Stone Golem" "Sunder" "Sweep" "Tempest Shield" "Temporal Chains" "Tornado Shot" "Trap Cooldown Support" "Trap Support" "Trap and Mine Damage Support" "Vengeance" "Vigilant Strike" "Viper Strike" "Vitality" "Vulnerability" "Warlord's Mark" "Weapon Elemental Damage Support" "Whirling Blades" "Wild Strike" "Wrath"
     SetFontSize 20
     SetBorderColor 0 135 255
-    #PlayAlertSound 5 50
 
+
+### ========== Flasks ====================================================== ###
 
 Show
     Class Flask
@@ -206,61 +219,62 @@ Show
     SetBackgroundColor 0 50 0 240
     #SetFontSize 36
 
-Show
-    Sockets >= 6
 
-Show
-    LinkedSockets >= 5
-
-Show
-    SocketGroup "W"
-    SetFontSize 40
-    SetBorderColor 255 255 0
-    PlayAlertSound 1 300
-
-# pretty sure these don't even drop, but they're available classes
-Show
-    Class Hideout Microtransaction
-
-Show # high-end base type rares
-    Rarity Rare
-    BaseType "Imperial Claw" "Terror Claw" "Gemini Claw"   "Imperial Skean" "Demon Dagger" "Sai"   "Royal Axe" "Infernal Axe" "Runic Hatchet"   "Auric Mace" "Nightmare Mace" "Behemoth Mace"   "Carnal Sceptre" "Void Sceptre" "Sambar Sceptre"   "Eternal Sword" "Midnight Blade" "Tiger Hook"   "Jewelled Foil" "Harpy Rapier" "Dragoon Sword"   "Tornado Wand" "Prophecy Wand" "Profane Wand"      "Imperial Bow" "Harbinger Bow" "Maraketh Bow"   "Imperial Staff" "Judgement Staff" "Eclipse Staff"   "Despot Axe" "Void Axe" "Fleshripper"   "Imperial Maul" "Terror Maul" "Coronal Maul"   "Lion Sword" "Infernal Sword" "Exquisite Blade"         "Astral Plate" "Gladiator Plate" "Glorious Plate"   "Exquisite Leather" "Zodiac Leather" "Assassin's Garb"   "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia"   "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar"   "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail"   "Blood Raiment" "Sadist Garb" "Carnal Armour"      "Vaal Greaves" "Titan Greaves"   "Stealth Boots" "Slink Boots"   "Arcanist Slippers" "Sorcerer Boots"   "Hydrascale Boots" "Dragonscale Boots"   "Legion Boots" "Crusader Boots"   "Assassin's Boots" "Murder Boots"      "Vaal Gauntlets" "Titan Gauntlets"   "Stealth Gloves" "Slink Gloves"   "Arcanist Gloves" "Sorcerer Gloves"   "Hydrascale Gauntlets" "Dragonscale Gauntlets"   "Legion Gloves" "Crusader Gloves"   "Assassin's Mitts" "Murder Mitts"      "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet"   "Silken Hood" "Sinner Tricorne" "Lion Pelt"   "Solaris Circlet" "Mind Cage" "Hubris Circlet"   "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet"   "Magistrate Crown" "Prophet Crown" "Praetor Crown"   "Harlequin Mask" "Vaal Mask" "Deicide Mask"      "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield"   "Vaal Buckler" "Crusader Buckler" "Imperial Buckler"   "Vaal Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield"   "Spiny Round Shield" "Cardinal Round Shield" "Elegant Round Shield"   "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield"   "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"
-    SetFontSize 38
-    SetBackgroundColor 25 25 0 240
-    SetBorderColor 100 100 0 240
-Show
-    Rarity Rare
+### ========== Uniques ===================================================== ###
 
 Show
     Rarity Unique
     SetFontSize 45
 
-## maximum sockets for one handed items
-#Show
-#    Class "One Hand" Claw Dagger Wand
-#    LinkedSockets >= 3
-#    SetBorderColor 0 186 255
-
-# quality items
 Show
-    Quality >= 20
+    Class "Divination Card"
+    SetFontSize 40
+    PlayAlertSound 4 200
 
-
-# base types to chance
 Show
-    Rarity Normal
-    BaseType "Sorcerer Boots" "Occultist's Vestment"
-    SetBorderColor 175 96 37
+    Class "Quest Items" Labyrinth
+    SetFontSize 40
 
+
+### ========== Sockets 2 =================================================== ###
+
+Show
+    Sockets = 6
+    LinkedSockets < 6
+    SetFontSize 42
+    SetBorderColor 100 250 80
+    PlayAlertSound 7 300
+
+Show
+    LinkedSockets = 5
+    SetFontSize 35
+    SetBorderColor 255 180 100
+
+Show
+    Sockets = 6
+    LinkedSockets = 6
+    SetFontSize 45
+    SetBorderColor 255 0 0 0
+    PlayAlertSound 1 300
+
+
+### ========== Just in Case ================================================ ###
+
+# pretty sure these don't even drop, but they're available classes
+Show
+    Class Hideout Microtransaction
+
+
+### ========== Everything Else ============================================= ###
 
 # hide everything else
-Hide
+#Hide
 
 # fade and shrink everything else
-#Show
-#    SetFontSize 1
-#    SetBackgroundColor 64 64 64 128
-#    SetTextColor 128 128 128
+Show
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 128
+    SetTextColor 128 128 128
 
 #Show
 #    SetFontSize 28
