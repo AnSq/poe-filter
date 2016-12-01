@@ -93,31 +93,7 @@ Show
     #PlayAlertSound 3 100
 
 
-### ========== Sockets 1 =================================================== ###
-
-# chromatic items
-Show
-    LinkedSockets >= 3
-    SocketGroup "RGB"
-    Height < 4
-    SetBorderColor 255 255 255
-#Hide
-Show
-    LinkedSockets >= 3
-    SocketGroup "RGB"
-    Height >= 4
-    SetFontSize 1
-    SetBackgroundColor 64 64 64 128
-    SetTextColor 128 128 128
-
-Show
-    SocketGroup "W"
-    SetFontSize 40
-    SetBorderColor 255 255 0
-    PlayAlertSound 1 100
-
-
-### ========== Normal Items ================================================ ###
+### ========== Normal Items 1 ============================================== ###
 
 # 20% quality normal items can be traded for quality improvement currency
 Show
@@ -156,19 +132,6 @@ Show
     SetBorderColor 255 127 128
     SetFontSize 40
 
-Show
-    BaseType "Sacrificial Garb"
-    SetFontSize 48
-
-#Hide
-Show
-    Rarity Normal
-    Sockets < 6
-    LinkedSockets < 5
-    SetFontSize 1
-    SetBackgroundColor 64 64 64 128
-    SetTextColor 128 128 128
-
 
 ### ========== Rare Items ================================================== ###
 
@@ -180,6 +143,50 @@ Show # high-end base type rares
     SetBorderColor 100 100 0 240
 Show
     Rarity Rare
+
+
+### ========== Sockets 1 =================================================== ###
+
+# chromatic items
+Show
+    LinkedSockets >= 3
+    SocketGroup "RGB"
+    Height < 4
+    SetBorderColor 255 255 255
+#Hide
+Show
+    LinkedSockets >= 3
+    SocketGroup "RGB"
+    Height >= 4
+    SetBorderColor 255 255 255
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 128
+
+Show
+    SocketGroup "W"
+    SetFontSize 40
+    SetBorderColor 255 255 0
+    PlayAlertSound 1 100
+
+
+### ========== Flasks ====================================================== ###
+
+Show
+    Class Flask
+    Quality >= 1
+    SetBorderColor 255 0 0
+
+Show
+    Class "Utility Flask"
+    SetBorderColor 0 190 0
+    SetBackgroundColor 0 50 0 240
+    #SetFontSize 36
+
+#Hide
+Show
+    Class Flask
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 128
 
 
 ### ========== Gems ======================================================== ###
@@ -206,18 +213,27 @@ Show
     SetBorderColor 0 135 255
 
 
-### ========== Flasks ====================================================== ###
+### ========== Divination Cards ============================================ ###
 
 Show
-    Class Flask
-    Quality >= 1
-    SetBorderColor 255 0 0
+    Class "Divination Card"
+    SetFontSize 40
+    PlayAlertSound 4 200
+
+
+### ========== Normal Items 2 ===============================================###
 
 Show
-    Class "Utility Flask"
-    SetBorderColor 0 190 0
-    SetBackgroundColor 0 50 0 240
-    #SetFontSize 36
+    BaseType "Sacrificial Garb"
+    SetFontSize 48
+
+#Hide
+Show
+    Rarity Normal
+    Sockets < 6
+    LinkedSockets < 5
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 128
 
 
 ### ========== Uniques ===================================================== ###
@@ -225,11 +241,6 @@ Show
 Show
     Rarity Unique
     SetFontSize 45
-
-Show
-    Class "Divination Card"
-    SetFontSize 40
-    PlayAlertSound 4 200
 
 Show
     Class "Quest Items" Labyrinth
@@ -274,7 +285,6 @@ Show
 Show
     SetFontSize 1
     SetBackgroundColor 64 64 64 128
-    SetTextColor 128 128 128
 
 #Show
 #    SetFontSize 28
