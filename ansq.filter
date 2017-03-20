@@ -26,7 +26,7 @@ Show
     PlayAlertSound 3 25
 Show
     Class Currency
-    BaseType Chance Jeweller
+    BaseType Chance Jeweller Bauble
     SetBorderColor 206 172 93
     SetTextColor 206 172 93
     SetBackgroundColor 10 10 0 240
@@ -34,7 +34,7 @@ Show
     PlayAlertSound 3 50
 Show
     Class Currency
-    BaseType Fusing Alchemy Chisel Bauble
+    BaseType Fusing Alchemy Chisel
     SetBorderColor 219 177 80
     SetTextColor 219 177 80
     SetBackgroundColor 10 10 0 240
@@ -42,7 +42,7 @@ Show
     PlayAlertSound 3 100
 Show
     Class Currency
-    BaseType Regret Blessed Chaos Scouring Silver Sextant Perandus Deck
+    BaseType Blessed Scouring Silver Perandus Deck
     SetBorderColor 231 180 68
     SetTextColor 231 180 68
     SetBackgroundColor 10 10 0 240
@@ -50,7 +50,7 @@ Show
     PlayAlertSound 3 150
 Show
     Class Currency
-    BaseType Prism Regal Vaal Divine
+    BaseType Prism Regal Vaal Divine Regret Chaos Sextant
     SetBorderColor 243 187 56
     SetTextColor 243 187 56
     SetBackgroundColor 10 10 0 240
@@ -60,10 +60,14 @@ Show
     Class Currency
     BaseType Mirror Exalted
     SetBorderColor 255 192 45
-    SetTextColor 255 192 45
-    SetBackgroundColor 40 20 0 240
+    #SetTextColor 255 192 45
+    #SetBackgroundColor 60 30 0 240
+    SetBackgroundColor 255 192 45 240
+    SetTextColor 60 30 0
     SetFontSize 45
     PlayAlertSound 1 300
+
+# Essence currency
 Show
     Class Currency
     BaseType Essence
@@ -80,17 +84,37 @@ Show
     SetBackgroundColor 20 0 0 240
     SetFontSize 41
     PlayAlertSound 4 300
+
+# Breach currency
 Show
+    Class Currency
+    BaseType Splinter
+    SetBorderColor 193 1 255
+    SetTextColor 193 1 255
+    SetBackgroundColor 10 0 10 240
+    SetFontSize 41
+    PlayAlertSound 4 250
+Show
+    Class Currency
+    BaseType Blessing
+    SetBorderColor 193 1 255
+    SetTextColor 193 1 255
+    SetBackgroundColor 10 0 10 240
+    SetFontSize 43
+    PlayAlertSound 4 300
+
+Show # fractional currency
     Class Currency
     BaseType Fragment Shard
     SetBorderColor 158 153 142
     SetBackgroundColor 8 8 0 240
     SetFontSize 24
-Show
+
+Show # unknown currency
     Class Currency
     SetBorderColor 200 200 0
     SetBackgroundColor 30 30 0 240
-    #PlayAlertSound 3 100
+    PlayAlertSound 3 100
 
 
 ### ========== Normal Items 1 ============================================== ###
@@ -108,7 +132,8 @@ Show
 # base types to chance
 Show
     Rarity Normal
-    BaseType "Sorcerer Boots" "Occultist's Vestment"
+    #BaseType "Sorcerer Boots" "Occultist's Vestment" "Assassin's Garb" "Prophecy Wand" "Deicide Mask" "Jewelled Foil"
+    BaseType "Sorcerer Boots"
     SetBorderColor 175 96 37
 
 # hammers for chisel recipe
@@ -118,12 +143,23 @@ Show
     SetBorderColor 107 130 126
 
 Show
+    Class Leaguestone
+    SetBorderColor 229 160 12
+    SetFontSize 40
+
+Show
+    Class "Misc Map Items"
+    SetBorderColor 255 255 255
+    SetFontSize 40
+
+Show
     Class Map
     SetBorderColor 255 255 255
     SetFontSize 40
 
 Show
     Class Jewel
+    Rarity Normal Magic Rare
     SetBorderColor 0 0 255
 
 # new base types
@@ -133,60 +169,105 @@ Show
     SetFontSize 40
 
 
-### ========== Rare Items ================================================== ###
-
-Show # high-end base type rares
-    Rarity Rare
-    BaseType "Imperial Claw" "Terror Claw" "Gemini Claw"   "Imperial Skean" "Demon Dagger" "Sai"   "Royal Axe" "Infernal Axe" "Runic Hatchet"   "Auric Mace" "Nightmare Mace" "Behemoth Mace"   "Carnal Sceptre" "Void Sceptre" "Sambar Sceptre"   "Eternal Sword" "Midnight Blade" "Tiger Hook"   "Jewelled Foil" "Harpy Rapier" "Dragoon Sword"   "Tornado Wand" "Prophecy Wand" "Profane Wand"      "Imperial Bow" "Harbinger Bow" "Maraketh Bow"   "Imperial Staff" "Judgement Staff" "Eclipse Staff"   "Despot Axe" "Void Axe" "Fleshripper"   "Imperial Maul" "Terror Maul" "Coronal Maul"   "Lion Sword" "Infernal Sword" "Exquisite Blade"         "Astral Plate" "Gladiator Plate" "Glorious Plate"   "Exquisite Leather" "Zodiac Leather" "Assassin's Garb"   "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia"   "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar"   "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail"   "Blood Raiment" "Sadist Garb" "Carnal Armour"      "Vaal Greaves" "Titan Greaves"   "Stealth Boots" "Slink Boots"   "Arcanist Slippers" "Sorcerer Boots"   "Hydrascale Boots" "Dragonscale Boots"   "Legion Boots" "Crusader Boots"   "Assassin's Boots" "Murder Boots"      "Vaal Gauntlets" "Titan Gauntlets"   "Stealth Gloves" "Slink Gloves"   "Arcanist Gloves" "Sorcerer Gloves"   "Hydrascale Gauntlets" "Dragonscale Gauntlets"   "Legion Gloves" "Crusader Gloves"   "Assassin's Mitts" "Murder Mitts"      "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet"   "Silken Hood" "Sinner Tricorne" "Lion Pelt"   "Solaris Circlet" "Mind Cage" "Hubris Circlet"   "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet"   "Magistrate Crown" "Prophet Crown" "Praetor Crown"   "Harlequin Mask" "Vaal Mask" "Deicide Mask"      "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield"   "Vaal Buckler" "Crusader Buckler" "Imperial Buckler"   "Vaal Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield"   "Spiny Round Shield" "Cardinal Round Shield" "Elegant Round Shield"   "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield"   "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"
-    SetFontSize 38
-    SetBackgroundColor 25 25 0 240
-    SetBorderColor 100 100 0 240
-Show
-    Rarity Rare
-
-
 ### ========== Sockets 1 =================================================== ###
 
 # chromatic items
 Show
+    Sockets < 6
     LinkedSockets >= 3
     SocketGroup "RGB"
+    Rarity Normal Magic Rare
     Height < 4
     SetBorderColor 255 255 255
-#Hide
-Show
+Hide
+#Show
+    Rarity Normal Magic
+    Sockets < 6
     LinkedSockets >= 3
     SocketGroup "RGB"
     Height >= 4
+    ItemLevel >= 40
     SetBorderColor 255 255 255
     SetFontSize 1
     SetBackgroundColor 64 64 64 128
+    Identified False
+    Corrupted False
 
 Show
     SocketGroup "W"
     SetFontSize 40
     SetBorderColor 255 255 0
-    PlayAlertSound 1 100
+    PlayAlertSound 2 100
+
+
+### ========== Rare Items ================================================== ###
+
+Show # high-end base type rares
+    Sockets < 6
+    LinkedSockets < 5
+    Rarity Rare
+
+    #BaseType "Imperial Claw" "Terror Claw" "Gemini Claw"   "Imperial Skean" "Demon Dagger" "Sai"   "Royal Axe" "Infernal Axe" "Runic Hatchet"   "Auric Mace" "Nightmare Mace" "Behemoth Mace"   "Carnal Sceptre" "Void Sceptre" "Sambar Sceptre"   "Eternal Sword" "Midnight Blade" "Tiger Hook"   "Jewelled Foil" "Harpy Rapier" "Dragoon Sword"   "Tornado Wand" "Prophecy Wand" "Profane Wand"      "Imperial Bow" "Harbinger Bow" "Maraketh Bow"   "Imperial Staff" "Judgement Staff" "Eclipse Staff"   "Despot Axe" "Void Axe" "Fleshripper"   "Imperial Maul" "Terror Maul" "Coronal Maul"   "Lion Sword" "Infernal Sword" "Exquisite Blade"         "Astral Plate" "Gladiator Plate" "Glorious Plate"   "Exquisite Leather" "Zodiac Leather" "Assassin's Garb"   "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia"   "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar"   "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail"   "Blood Raiment" "Sadist Garb" "Carnal Armour"      "Vaal Greaves" "Titan Greaves"   "Stealth Boots" "Slink Boots"   "Arcanist Slippers" "Sorcerer Boots"   "Hydrascale Boots" "Dragonscale Boots"   "Legion Boots" "Crusader Boots"   "Assassin's Boots" "Murder Boots"      "Vaal Gauntlets" "Titan Gauntlets"   "Stealth Gloves" "Slink Gloves"   "Arcanist Gloves" "Sorcerer Gloves"   "Hydrascale Gauntlets" "Dragonscale Gauntlets"   "Legion Gloves" "Crusader Gloves"   "Assassin's Mitts" "Murder Mitts"      "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet"   "Silken Hood" "Sinner Tricorne" "Lion Pelt"   "Solaris Circlet" "Mind Cage" "Hubris Circlet"   "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet"   "Magistrate Crown" "Prophet Crown" "Praetor Crown"   "Harlequin Mask" "Vaal Mask" "Deicide Mask"      "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield"   "Vaal Buckler" "Crusader Buckler" "Imperial Buckler"   "Vaal Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield"   "Spiny Round Shield" "Cardinal Round Shield" "Elegant Round Shield"   "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield"   "Ezomyte Spiked Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield"
+
+    #From NeverSink's
+    BaseType "Ambusher" "Arcanist Gloves" "Arcanist Slippers" "Assassin's Garb" "Astral Plate" "Astral Plate" "Behemoth Mace" "Blood Raiment" "Branded Kite Shield" "Broadhead Arrow Quiver" "Champion Kite Shield" "Conquest Chainmail" "Coronal Maul" "Crusader Boots" "Crusader Gloves" "Deicide Mask" "Demon Dagger" "Desert Brigandine" "Dragonscale Boots" "Dragonscale Doublet" "Dragonscale Gauntlets" "Elegant Ringmail" "Ezomyte Dagger" "Full Dragonscale" "Gemini Claw" "Glorious Plate" "Glorious Plate" "Harbinger Bow" "Harmonic Spirit Shield" "Harpy Rapier" "Hubris Circlet" "Imbued Wand" "Imperial Skean" "Infernal Axe" "Jewelled Foil" "Kris" "Lathi" "Lion Pelt" "Mind Cage" "Murder Boots" "Murder Mitts" "Nightmare Bascinet" "Nightmare Mace" "Opal Wand" "Platinum Kris" "Praetor Crown" "Profane Wand" "Prophecy Wand" "Royal Burgonet" "Runic Hatchet" "Sai" "Sambar Sceptre" "Siege Axe" "Sinner Tricorne" "Skean" "Slink Boots" "Slink Gloves" "Sorcerer Boots" "Sorcerer Gloves" "Spike-Point Arrow Quiver" "Spiraled Foil" "Stealth Boots" "Titan Gauntlets" "Titan Greaves" "Titanium Spirit Shield" "Tornado Wand" "Two-Point Arrow Quiver" "Vaal Axe" "Vaal Gauntlets" "Vaal Greaves" "Vaal Hatchet" "Vaal Rapier" "Vaal Regalia" "Vaal Spirit Shield" "Varnished Coat" "Void Sceptre"
+
+    SetFontSize 38
+    SetBackgroundColor 25 25 0 240
+    SetBorderColor 100 100 0 240
+
+Show
+    BaseType "Breach Ring"
+    SetBorderColor 193 1 255
+
+Show
+    BaseType Talisman
+    SetFontSize 36
+    SetBorderColor 110 210 124
+
+Show # exclude "ring"mail from jewelery
+    Rarity Rare
+    BaseType Ringmail
+    Sockets < 6
+    LinkedSockets < 5
+
+Show # jewelery
+    Rarity Rare
+    BaseType Ring Amulet Belt Sash
+    SetFontSize 34
+    SetBackgroundColor 25 25 0 240
+    SetBorderColor 0 100 100 240
+
+Show
+    Rarity Rare
+    Sockets < 6
+    LinkedSockets < 5
 
 
 ### ========== Flasks ====================================================== ###
 
 Show
     Class Flask
+    Rarity Normal Magic
     Quality >= 1
     SetBorderColor 255 0 0
 
 Show
     Class "Utility Flask"
+    Rarity Normal Magic
     SetBorderColor 0 190 0
     SetBackgroundColor 0 50 0 240
-    #SetFontSize 36
+    SetFontSize 25
 
-#Hide
-Show
+Hide
+#Show
     Class Flask
+    Rarity Normal Magic
+    ItemLevel >= 40
     SetFontSize 1
     SetBackgroundColor 64 64 64 128
+    Identified False
+    Corrupted False
 
 
 ### ========== Gems ======================================================== ###
@@ -202,7 +283,7 @@ Show
 # drop-only
 Show
     Class Gem
-    BaseType Empower Enhance Enlighten Portal
+    BaseType Empower Enhance Enlighten Portal "Detonate Mines" Vaal
     SetFontSize 42
     SetBorderColor 255 255 0
     PlayAlertSound 5 300
@@ -227,13 +308,16 @@ Show
     BaseType "Sacrificial Garb"
     SetFontSize 48
 
-#Hide
-Show
+Hide
+#Show
     Rarity Normal
     Sockets < 6
     LinkedSockets < 5
+    ItemLevel >= 68
     SetFontSize 1
     SetBackgroundColor 64 64 64 128
+    Identified False
+    Corrupted False
 
 
 ### ========== Uniques ===================================================== ###
@@ -241,6 +325,7 @@ Show
 Show
     Rarity Unique
     SetFontSize 45
+    PlayAlertSound 6 300
 
 Show
     Class "Quest Items" Labyrinth
@@ -251,7 +336,7 @@ Show
 
 Show
     Sockets = 6
-    LinkedSockets < 6
+    LinkedSockets < 5
     SetFontSize 42
     SetBorderColor 100 250 80
     PlayAlertSound 7 300
@@ -260,6 +345,7 @@ Show
     LinkedSockets = 5
     SetFontSize 35
     SetBorderColor 255 180 100
+    PlayAlertSound 7 300
 
 Show
     Sockets = 6
@@ -267,6 +353,12 @@ Show
     SetFontSize 45
     SetBorderColor 255 0 0 0
     PlayAlertSound 1 300
+
+Show
+    Sockets >= 5
+    ItemLevel < 68
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 192
 
 
 ### ========== Just in Case ================================================ ###
@@ -278,13 +370,53 @@ Show
 
 ### ========== Everything Else ============================================= ###
 
-# hide everything else
-#Hide
-
-# fade and shrink everything else
 Show
+    Corrupted True
+    SetFontSize 1
+    SetBackgroundColor 0 0 0 196
+    SetBorderColor 128 32 32
+
+Show
+    Identified True
+    SetFontSize 1
+    SetBackgroundColor 0 0 0 196
+    SetBorderColor 32 128 64
+
+# hide everything else
+Hide
+#Show
+    ItemLevel >= 40
     SetFontSize 1
     SetBackgroundColor 64 64 64 128
+    SetBorderColor 0 0 0
 
-#Show
-#    SetFontSize 28
+
+### ========== Leveling ==================================================== ###
+
+Show
+    LinkedSockets >= 3
+    SocketGroup "RGB"
+    Height >= 4
+    ItemLevel < 40
+    SetBorderColor 255 255 255
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 192
+
+Show
+    Class Flask
+    ItemLevel < 40
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 192
+
+Show
+    Rarity Normal
+    Sockets < 6
+    LinkedSockets < 5
+    ItemLevel < 40
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 192
+
+Show
+    ItemLevel < 40
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 192
