@@ -2,6 +2,24 @@ Show
     Class Piece
 
 Show
+    Class Incubator
+
+Show
+    Class Sample
+
+Show
+    Class Region
+
+Show
+    Class Incursion
+    SetFontSize 45
+    SetBorderColor 255 75 59
+    SetTextColor 255 75 59
+    PlayAlertSound 3 300
+    PlayEffect Red
+    MinimapIcon 0 Red Circle
+
+Show
     Class "Pantheon Soul"
 
 Show
