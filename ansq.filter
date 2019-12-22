@@ -12,9 +12,10 @@ Show
 
 Show
     Class Incursion
-    SetFontSize 45
-    SetBorderColor 255 75 59
-    SetTextColor 255 75 59
+    SetBorderColor 255 45 45
+    SetTextColor 255 45 45
+    SetBackgroundColor 20 0 0 240
+    SetFontSize 100
     PlayAlertSound 3 300
     PlayEffect Red
     MinimapIcon 0 Red Circle
@@ -81,6 +82,8 @@ Show
     SetBackgroundColor 10 10 0 240
     SetFontSize 34
     PlayAlertSound 3 25
+    MinimapIcon 1 Yellow Star
+    PlayEffect Yellow Temp
 Show
     Class Currency
     BaseType Chance Jeweller Bauble
@@ -89,6 +92,8 @@ Show
     SetBackgroundColor 10 10 0 240
     SetFontSize 36
     PlayAlertSound 3 50
+    MinimapIcon 1 Yellow Star
+    PlayEffect Yellow Temp
 Show
     Class Currency
     BaseType Fusing Alchemy Chisel Binding
@@ -97,6 +102,8 @@ Show
     SetBackgroundColor 10 10 0 240
     SetFontSize 38
     PlayAlertSound 3 100
+    MinimapIcon 1 Yellow Star
+    PlayEffect Yellow Temp
 Show
     Class Currency
     BaseType Blessed Scouring Silver Perandus Deck Horizon Engineer
@@ -105,6 +112,8 @@ Show
     SetBackgroundColor 10 10 0 240
     SetFontSize 40
     PlayAlertSound 3 150
+    MinimapIcon 0 Yellow Star
+    PlayEffect Yellow
 Show
     Class Currency
     BaseType Prism Regal Vaal Regret Chaos Apprentice
@@ -113,6 +122,8 @@ Show
     SetBackgroundColor 10 10 0 240
     SetFontSize 42
     PlayAlertSound 3 250
+    MinimapIcon 0 Yellow Star
+    PlayEffect Yellow
 Show
     Class Currency
     BaseType Divine Sextant Ancient Harbinger Annulment
@@ -121,6 +132,8 @@ Show
     SetBackgroundColor 50 40 0 240
     SetFontSize 45
     PlayAlertSound 3 300
+    MinimapIcon 0 Yellow Star
+    PlayEffect Yellow
 Show
     Class Currency
     BaseType Mirror Exalted
@@ -131,6 +144,8 @@ Show
     SetTextColor 60 30 0
     SetFontSize 45
     PlayAlertSound 1 300
+    MinimapIcon 0 Yellow Star
+    PlayEffect Yellow
 
 # Essence currency
 Show
@@ -141,6 +156,8 @@ Show
     SetBackgroundColor 0 20 20 240
     SetFontSize 41
     PlayAlertSound 4 300
+    MinimapIcon 0 Yellow Star
+    PlayEffect Blue
 Show
     Class Currency
     BaseType "Remnant of Corruption"
@@ -149,6 +166,8 @@ Show
     SetBackgroundColor 20 0 0 240
     SetFontSize 41
     PlayAlertSound 4 300
+    MinimapIcon 0 Yellow Star
+    PlayEffect Red
 
 # Breach currency
 Show
@@ -159,6 +178,8 @@ Show
     SetBackgroundColor 10 0 10 240
     SetFontSize 41
     PlayAlertSound 4 250
+    MinimapIcon 0 Yellow Star
+    PlayEffect Blue
 Show
     Class Currency
     BaseType Blessing
@@ -167,6 +188,8 @@ Show
     SetBackgroundColor 10 0 10 240
     SetFontSize 43
     PlayAlertSound 4 300
+    MinimapIcon 0 Yellow Star
+    PlayEffect Blue
 
 # Bestiary nets
 Show
@@ -184,12 +207,15 @@ Show # fractional currency
     SetBorderColor 158 153 142
     SetBackgroundColor 8 8 0 240
     SetFontSize 24
+    MinimapIcon 2 Yellow Star
 
 Show # unknown currency
     Class Currency
     SetBorderColor 200 200 0
     SetBackgroundColor 30 30 0 240
     PlayAlertSound 3 100
+    MinimapIcon 1 Yellow Star
+    PlayEffect Yellow
 
 
 ### ========== Normal Items 1 ============================================== ###
@@ -239,18 +265,22 @@ Show
 # White Maps
 Show
     Class Map
-    DropLevel < 73
+    MapTier <= 5
     Rarity Normal Magic Rare
     SetBorderColor 223 223 233
     SetFontSize 40
+    MinimapIcon 1 White Circle
+    PlayEffect White
 
 # Red Maps
 Show
     Class Map
-    DropLevel >= 78
+    MapTier >= 11
     Rarity Normal Magic Rare
     SetBorderColor 202 25 15
     SetFontSize 40
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
 
 # Yellow Maps
 Show
@@ -258,6 +288,8 @@ Show
     Rarity Normal Magic Rare
     SetBorderColor 234 198 52
     SetFontSize 40
+    MinimapIcon 1 Yellow Circle
+    PlayEffect Yellow
 
 
 ### ========== Sockets 1 =================================================== ###
@@ -403,6 +435,8 @@ Show #
     SetBackgroundColor 14 186 255 250
     SetFontSize 45
     PlayAlertSound 1 300
+    MinimapIcon 0 Blue Square
+    PlayEffect Blue
 Show #
     Class Card
     BaseType "Abandoned Wealth" "The King's Heart" "Pride Before the Fall" "The Dragon's Heart" "The Wolf" "The Last One Standing" "Wealth and Power" "Last Hope" "The Celestial Justicar" "The Hunger" "The Wolven King's Bite"
@@ -411,6 +445,8 @@ Show #
     SetBackgroundColor 3 38 53 250
     SetFontSize 43
     PlayAlertSound 4 300
+    MinimapIcon 0 Blue Square
+    PlayEffect Blue
 Show #
     Class Card
     BaseType "The Brittle Emperor" "The Saint's Treasure" "The Vast" "The Valkyrie" "The Artist" "The Thaumaturgist" "Heterochromia" "The Fletcher" "The Sephirot" "Bowyer's Dream" "Time-Lost Relic"
@@ -419,6 +455,8 @@ Show #
     SetBackgroundColor 2 31 43 250
     SetFontSize 41
     PlayAlertSound 4 250
+    MinimapIcon 1 Blue Square
+    PlayEffect Blue
 Show #
     Class Card
     BaseType "The Void" "The Enlightened" "The Ethereal" "The Polymath" "The Hoarder" "The Offering" "The Dapper Prodigy" "The Formless Sea" "The Wind" "Chaotic Disposition" "The Risk" "Lucky Deck" "The Cartographer" "The Valley of Steel Boxes" "The Wretched" "The Porcupine" "Emperor of Purity" "Merciless Armament" "Jack in the Box" "Scholar of the Seas" "The Avenger" "The Body" "The Chains that Bind" "The Dark Mage" "The Lion" "The Stormcaller" "The Warlord" "Vinia's Token" "The Cursed King" "Lucky Connections" "The Soul"
@@ -427,6 +465,7 @@ Show #
     SetBackgroundColor 2 23 32 250
     SetFontSize 39
     PlayAlertSound 4 200
+    MinimapIcon 1 Blue Square
 Show #
     Class Card
     BaseType "Humility" "The Inventor" "The Jester" "Lingering Remnants" "Dialla's Subjugation" "Earth Drinker" "Emperor's Luck" "Glimmer of Hope" "Hope" "Hubris" "Hunter's Resolve" "Lysah's Respite" "Rats" "The Aesthete" "The Arena Champion" "The Battle Born" "The Calling" "The Cataclysm" "The Drunken Aristocrat" "The Endurance" "The Gentleman" "The One With All" "The Penitent" "The Poet" "The Road to Power" "The Spoiled Prince" "The Throne" "The Tyrant" "The Union" "The Wrath" "Treasure Hunter" "Mitts" "The Forsaken" "Atziri's Arsenal" "The Demoness" "The Harvester" "The Traitor" "Blind Venture" "The Scavenger" "The Gladiator" "The Pact" "Gemcutter's Promise" "The Survivalist" "Lost Worlds" "The Mercenary" "The Encroaching Darkness" "The Surveyor" "The Garish Power"
@@ -435,6 +474,7 @@ Show #
     SetBackgroundColor 1 15 21 250
     SetFontSize 36
     PlayAlertSound 4 150
+    MinimapIcon 2 Blue Square
 Show #
     Class Card
     BaseType "The Fox" "Audacity" "Shard of Fate" "Three Faces in the Dark" "Light and Truth" "Boundless Realms" "The Dragon" "The Doppelganger" "The Lord in Black" "The Gambler" "The Sun" "The Scholar"
@@ -443,6 +483,7 @@ Show #
     SetBackgroundColor 1 8 11 250
     SetFontSize 34
     PlayAlertSound 4 100
+    MinimapIcon 2 Blue Square
 Show #
     Class Card
     BaseType "Gift of the Gemling Queen" "The Opulent" "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Birth of the Three" "Cartographer's Delight" "Coveted Possession" "Death" "Destined to Crumble" "Doedre's Madness" "Dying Anguish" "Grave Knowledge" "Her Mask" "Loyalty" "Prosperity" "Rain of Chaos" "Rain Tempter" "The Betrayal" "The Catalyst" "The Conduit" "The Explorer" "The Feast" "The Gemcutter" "The Hermit" "The Inoculated" "The Lich" "The Lunaris Priestess" "The Oath" "The Pack Leader" "The Rabid Rhoa" "The Scarred Meadow" "The Sigil" "The Siren" "The Summoner" "The Surgeon" "The Tower" "The Trial" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Web" "The Wolf's Shadow" "Tranquillity" "Turn the Other Cheek" "Volatile Power" "Call to the First Ones" "The Coming Storm" "The Wolverine" "Might is Right" "Struck by Lightning" "The Metalsmith's Gift" "The Carrion Crow" "Lantador's Lost Love" "The King's Blade" "The Lover" "The Incantation" "The Flora's Gift" "Thunderous Skies"
@@ -451,12 +492,14 @@ Show #
     SetBackgroundColor 0 0 0 250
     SetFontSize 32
     PlayAlertSound 4 50
+    MinimapIcon 2 Blue Square
 
 Show
     Class "Divination Card"
     SetFontSize 40
     SetBorderColor 255 255 255
     PlayAlertSound 4 200
+    MinimapIcon 2 Blue Square
 
 
 ### ========== Uniques ===================================================== ###
@@ -467,11 +510,15 @@ Show
     SetFontSize 45
     PlayAlertSound 6 300
     SetBorderColor 255 255 255
+    MinimapIcon 0 Brown Circle
+    PlayEffect Brown
 
 Show
     Rarity Unique
     SetFontSize 45
     PlayAlertSound 6 300
+    MinimapIcon 0 Brown Hexagon
+    PlayEffect Brown
 
 Show
     Class "Quest Items" Labyrinth
@@ -509,6 +556,8 @@ Show
     SetFontSize 42
     SetBorderColor 100 250 80
     PlayAlertSound 7 300
+    MinimapIcon 1 Green Triangle
+    PlayEffect Green
 
 Show
     LinkedSockets = 5
@@ -525,6 +574,8 @@ Show
     SetTextColor 0 0 0
     SetBackgroundColor 255 255 119 240
     PlayAlertSound 10 300
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
 Show
     Rarity Magic
     Sockets = 6
@@ -534,6 +585,8 @@ Show
     SetTextColor 0 0 0
     SetBackgroundColor 136 136 255 240
     PlayAlertSound 10 300
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
 Show
     Rarity Normal
     Sockets = 6
@@ -543,6 +596,8 @@ Show
     SetTextColor 0 0 0
     SetBackgroundColor 200 200 200 240
     PlayAlertSound 10 300
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
 
 Show
     Sockets >= 5
