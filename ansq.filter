@@ -2,12 +2,6 @@ Show
     Class Piece
 
 Show
-    Class Incubator
-
-Show
-    Class Sample
-
-Show
     Class Region
 
 Show
@@ -116,7 +110,7 @@ Show
     PlayEffect Yellow
 Show
     Class Currency
-    BaseType Prism Regal Vaal Regret Chaos Apprentice
+    BaseType Prism Regal "Vaal Orb" Regret Chaos Apprentice
     SetBorderColor 243 187 56
     SetTextColor 243 187 56
     SetBackgroundColor 10 10 0 240
@@ -169,6 +163,27 @@ Show
     MinimapIcon 0 Yellow Star
     PlayEffect Red
 
+# Legion currency
+Show
+	Class Currency
+	BaseType Timeless
+    SetBorderColor 181 138 251
+    SetTextColor 181 138 251
+    SetBackgroundColor 10 0 10 240
+    SetFontSize 41
+    PlayAlertSound 4 250
+    MinimapIcon 0 Yellow Star
+    PlayEffect Blue
+Show
+	Class Incubator
+	SetBorderColor 216 162 238
+    SetTextColor 216 162 238
+    SetBackgroundColor 10 0 10 240
+    SetFontSize 41
+    PlayAlertSound 4 250
+    MinimapIcon 0 Yellow Star
+    PlayEffect Blue
+
 # Breach currency
 Show
     Class Currency
@@ -200,6 +215,40 @@ Show
     SetBackgroundColor 20 0 0 240
     SetFontSize 41
     PlayAlertSound 4 300
+
+# Delve
+Show
+    Class Currency
+    BaseType Fossil
+    SetBorderColor 10 200 250
+    SetTextColor 10 200 250
+    SetBackgroundColor 0 10 10 240
+    SetFontSize 36
+    PlayAlertSound 4 200
+    MinimapIcon 1 Blue Diamond
+    PlayEffect Blue
+
+# Metamorph
+Show
+    Class Sample
+    SetBorderColor 10 250 100
+    SetTextColor 10 250 100
+    SetBackgroundColor 0 10 0 240
+    SetFontSize 38
+    PlayAlertSound 4 250
+    MinimapIcon 0 Green Diamond
+    PlayEffect Green
+Show
+    Class Currency
+    BaseType Catalyst
+    SetBorderColor 120 250 140
+    SetTextColor 120 250 140
+    SetBackgroundColor 0 10 0 240
+    SetFontSize 35
+    PlayAlertSound 4 200
+    MinimapIcon 1 Green Diamond
+    PlayEffect Green
+
 
 Show # fractional currency
     Class Currency
