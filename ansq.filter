@@ -1,3 +1,21 @@
+#Show
+#    BaseType == "Iron Staff" "Vile Staff" "Military Staff" "Serpentine Staff" "Ezomyte Staff" "Judgement Staff" "Gnarled Branch" "Royal Staff" "Highborn Staff" "Primordial Staff" "Lathi" "Imperial Staff" "Bastard Sword" "Ornate Sword" "Highland Blade" "Tiger Sword" "Reaver Sword" "Ezomyte Blade" "Lion Sword" "Infernal Sword" "Whalebone Rapier" "Basket Rapier" "Jagged Foil" "Antique Rapier" "Elegant Foil" "Estoc" "Vaal Rapier" "Jewelled Foil" "Rusted Sword" "Sabre" "War Sword" "Elegant Sword" "Dusk Blade" "Cutlass" "Elder Sword" "Twilight Blade" "Corsair Sword" "Gladius" "Legion Sword" "Vaal Blade" "Eternal Sword" "Midnight Blade" "Sledgehammer" "Jagged Maul" "Brass Maul" "Great Mallet" "Steelhead" "Dread Maul" "Karui Maul" "Great Mallet" "Brass Maul" "Jagged Maul" "Imperial Maul" "Terror Maul" "Bronze Sceptre" "Iron Sceptre" "Ritual Sceptre" "Shadow Sceptre" "Grinning Fetish" "Crystal Sceptre" "Karui Sceptre" "Opal Sceptre" "Platinum Sceptre" "Vaal Sceptre" "Void Sceptre" "Skinning Knife" "Stiletto" "Flaying Knife" "Skinning Knife" "Ambusher" "Boot Knife" "Boot Blade" "Royal Skean" "Fiend Dagger" "Ezomyte Dagger" "Platinum Kris" "Slaughter Knife" "Imperial Skean" "Nailed Fist" "Awl" "Timeworn Claw" "Fright Claw" "Thresher Claw" "Gut Ripper" "Throat Stabber" "Hellion's Paw" "Vaal Claw" "Imperial Claw" "Terror Claw" "Crude Bow" "Short Bow" "Long Bow" "Royal Bow" "Death Bow" "Decimation Bow" "Ranger Bow" "Assassin Bow" "Spine Bow" "Imperial Bow" "Harbinger Bow" "Spiked Club" "War Hammer" "Dream Mace" "Rock Breaker" "Ornate Mace" "Gavel" "Auric Mace" "Woodsplitter" "Poleaxe" "Shadow Axe" "Jasper Chopper" "Headsman Axe" "Abyssal Axe" "Karui Chopper" "Sundering Axe" "Ezomyte Axe" "Vaal Axe" "Despot Axe" "Void Axe" "Jade Hatchet" "Cleaver" "Decorative Axe" "Tomahawk" "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Driftwood Wand" "Goat's Horn" "Carved Wand" "Quartz Wand" "Spiraled Wand" "Sage Wand" "Engraved Wand" "Crystal Wand" "Demon's Horn" "Imbued Wand" "Opal Wand" "Tornado Wand" "Prophecy Wand"
+#    Rarity Normal
+#    Corrupted False
+#    SetBackgroundColor 175 96 37 180
+#    SetFontSize 1
+
+Show
+    Class Currency
+    BaseType Oil
+    SetFontSize 35
+    SetTextColor 50 50 0
+    SetBackgroundColor 180 180 100
+
+Show
+    Class Heist Trinket Contract
+    SetFontSize 42
+
 Show
     Class Piece
 
@@ -165,8 +183,8 @@ Show
 
 # Legion currency
 Show
-	Class Currency
-	BaseType Timeless
+    Class Currency
+    BaseType Timeless
     SetBorderColor 181 138 251
     SetTextColor 181 138 251
     SetBackgroundColor 10 0 10 240
@@ -175,8 +193,8 @@ Show
     MinimapIcon 0 Yellow Star
     PlayEffect Blue
 Show
-	Class Incubator
-	SetBorderColor 216 162 238
+    Class Incubator
+    SetBorderColor 216 162 238
     SetTextColor 216 162 238
     SetBackgroundColor 10 0 10 240
     SetFontSize 41
@@ -303,6 +321,12 @@ Show
     Rarity Normal Magic Rare
     SetBorderColor 0 0 255
 
+# new base types
+Show
+    BaseType "Gripped Gloves" "Vanguard Belt" "Spiked Gloves" "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Fingerless Silk Gloves"
+    SetBorderColor 255 127 128
+    SetFontSize 40
+
 
 ### ========== Maps ======================================================== ###
 
@@ -369,7 +393,8 @@ Show
     Rarity Normal Magic Rare
     Height < 4
     SetBorderColor 255 255 255
-Hide
+Show
+#Hide
     Rarity Normal Magic
     Sockets < 6
     LinkedSockets >= 3
@@ -421,6 +446,14 @@ Show # jewelery
 
 Show
     Rarity Rare
+    Class Gloves
+    Identified False
+    Sockets < 6
+    LinkedSockets < 5
+    SetBorderColor 150 80 80
+
+Show
+    Rarity Rare
     Sockets < 6
     LinkedSockets < 5
 
@@ -460,10 +493,17 @@ Show
     SetBorderColor 255 0 0
     PlayAlertSound 5 200
 
+Show
+    Class Gem
+    GemLevel >= 19
+    SetFontSize 36
+    SetBorderColor 0 255 0
+    PlayAlertSound 5 200
+
 # drop-only
 Show
     Class Gem
-    BaseType Empower Enhance Enlighten Portal "Detonate Mines" Vaal "Added Chaos Damage Support" "Block Chance Reduction Support"
+    BaseType Empower Enhance Enlighten Portal "Detonate Mines" Vaal "Block Chance Reduction Support" Awakened
     SetFontSize 42
     SetBorderColor 255 255 0
     PlayAlertSound 5 300
@@ -590,12 +630,6 @@ Hide
     SetFontSize 1
     SetBackgroundColor 64 64 64 128
 
-# new base types
-Show
-    BaseType "Gripped Gloves" "Vanguard Belt" "Spiked Gloves" "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Fingerless Silk Gloves"
-    SetBorderColor 255 127 128
-    SetFontSize 40
-
 
 ### ========== Sockets 2 =================================================== ###
 
@@ -680,6 +714,10 @@ Show
     SetFontSize 1
     SetBackgroundColor 0 0 0 196
     SetBorderColor 32 128 64
+
+Show
+    ItemLevel <= 60
+    LinkedSockets >= 4
 
 # hide everything else
 Hide
