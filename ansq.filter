@@ -1,20 +1,82 @@
-#Show
-#    BaseType == "Iron Staff" "Vile Staff" "Military Staff" "Serpentine Staff" "Ezomyte Staff" "Judgement Staff" "Gnarled Branch" "Royal Staff" "Highborn Staff" "Primordial Staff" "Lathi" "Imperial Staff" "Bastard Sword" "Ornate Sword" "Highland Blade" "Tiger Sword" "Reaver Sword" "Ezomyte Blade" "Lion Sword" "Infernal Sword" "Whalebone Rapier" "Basket Rapier" "Jagged Foil" "Antique Rapier" "Elegant Foil" "Estoc" "Vaal Rapier" "Jewelled Foil" "Rusted Sword" "Sabre" "War Sword" "Elegant Sword" "Dusk Blade" "Cutlass" "Elder Sword" "Twilight Blade" "Corsair Sword" "Gladius" "Legion Sword" "Vaal Blade" "Eternal Sword" "Midnight Blade" "Sledgehammer" "Jagged Maul" "Brass Maul" "Great Mallet" "Steelhead" "Dread Maul" "Karui Maul" "Great Mallet" "Brass Maul" "Jagged Maul" "Imperial Maul" "Terror Maul" "Bronze Sceptre" "Iron Sceptre" "Ritual Sceptre" "Shadow Sceptre" "Grinning Fetish" "Crystal Sceptre" "Karui Sceptre" "Opal Sceptre" "Platinum Sceptre" "Vaal Sceptre" "Void Sceptre" "Skinning Knife" "Stiletto" "Flaying Knife" "Skinning Knife" "Ambusher" "Boot Knife" "Boot Blade" "Royal Skean" "Fiend Dagger" "Ezomyte Dagger" "Platinum Kris" "Slaughter Knife" "Imperial Skean" "Nailed Fist" "Awl" "Timeworn Claw" "Fright Claw" "Thresher Claw" "Gut Ripper" "Throat Stabber" "Hellion's Paw" "Vaal Claw" "Imperial Claw" "Terror Claw" "Crude Bow" "Short Bow" "Long Bow" "Royal Bow" "Death Bow" "Decimation Bow" "Ranger Bow" "Assassin Bow" "Spine Bow" "Imperial Bow" "Harbinger Bow" "Spiked Club" "War Hammer" "Dream Mace" "Rock Breaker" "Ornate Mace" "Gavel" "Auric Mace" "Woodsplitter" "Poleaxe" "Shadow Axe" "Jasper Chopper" "Headsman Axe" "Abyssal Axe" "Karui Chopper" "Sundering Axe" "Ezomyte Axe" "Vaal Axe" "Despot Axe" "Void Axe" "Jade Hatchet" "Cleaver" "Decorative Axe" "Tomahawk" "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Driftwood Wand" "Goat's Horn" "Carved Wand" "Quartz Wand" "Spiraled Wand" "Sage Wand" "Engraved Wand" "Crystal Wand" "Demon's Horn" "Imbued Wand" "Opal Wand" "Tornado Wand" "Prophecy Wand"
-#    Rarity Normal
-#    Corrupted False
-#    SetBackgroundColor 175 96 37 180
-#    SetFontSize 1
+
 
 Show
     Class Currency
     BaseType Oil
+    SetTextColor 194 155 37
+    SetBorderColor 194 155 37
+    SetBackgroundColor 20 15 4
+    MinimapIcon 1 Yellow Raindrop
+    PlayEffect Yellow
+    Continue
+Show
+    Class Currency
+    BaseType "Clear Oil"
+    SetFontSize 33
+    MinimapIcon 2 Yellow Raindrop
+Show
+    Class Currency
+    BaseType "Sepia Oil"
+    SetFontSize 34
+    MinimapIcon 2 Yellow Raindrop
+Show
+    Class Currency
+    BaseType "Amber Oil"
     SetFontSize 35
-    SetTextColor 50 50 0
-    SetBackgroundColor 180 180 100
+    MinimapIcon 2 Yellow Raindrop
+Show
+    Class Currency
+    BaseType "Verdant Oil"
+    SetFontSize 36
+Show
+    Class Currency
+    BaseType "Teal Oil"
+    SetFontSize 37
+Show
+    Class Currency
+    BaseType "Azure Oil"
+    SetFontSize 38
+Show
+    Class Currency
+    BaseType "Indigo Oil"
+    SetFontSize 39
+Show
+    Class Currency
+    BaseType "Violet Oil"
+    SetFontSize 40
+Show
+    Class Currency
+    BaseType "Crimson Oil"
+    SetFontSize 41
+    MinimapIcon 0 Yellow Raindrop
+Show
+    Class Currency
+    BaseType "Black Oil"
+    SetFontSize 42
+    MinimapIcon 0 Yellow Raindrop
+Show
+    Class Currency
+    BaseType "Opalescent Oil"
+    SetFontSize 43
+    MinimapIcon 0 Yellow Raindrop
+Show
+    Class Currency
+    BaseType "Silver Oil"
+    SetFontSize 44
+    MinimapIcon 0 Yellow Raindrop
+Show
+    Class Currency
+    BaseType "Golden Oil"
+    SetFontSize 45
+    MinimapIcon 0 Yellow Raindrop
 
 Show
-    Class Heist Trinket Contract
+    Class Heist Trinket Contract Blueprint
+    SetBorderColor 215 12 3
+    SetBackgroundColor 20 0 0 240
     SetFontSize 42
+    PlayAlertSound 11 300
+    MinimapIcon 1 Red Square
 
 Show
     Class Piece
@@ -68,11 +130,19 @@ Show
     BaseType Portal Wisdom
     SetBorderColor 170 158 130
     SetTextColor 170 158 130
-    SetBackgroundColor 10 10 0 240
-    SetFontSize 30
+    SetBackgroundColor 10 10 0 160
+    SetFontSize 20
 Show
     Class Currency
-    BaseType Augmentation Scrap Whetstone Transmutation
+    BaseType Scrap Whetstone
+    SetBorderColor 182 163 118
+    SetTextColor 182 163 118
+    SetBackgroundColor 10 10 0 200
+    SetFontSize 26
+    PlayAlertSound 3 10
+Show
+    Class Currency
+    BaseType Augmentation Transmutation
     SetBorderColor 182 163 118
     SetTextColor 182 163 118
     SetBackgroundColor 10 10 0 240
@@ -128,7 +198,7 @@ Show
     PlayEffect Yellow
 Show
     Class Currency
-    BaseType Prism Regal "Vaal Orb" Regret Chaos Apprentice
+    BaseType Gemcutter Regal "Vaal Orb" Regret Chaos Apprentice
     SetBorderColor 243 187 56
     SetTextColor 243 187 56
     SetBackgroundColor 10 10 0 240
@@ -156,8 +226,8 @@ Show
     SetTextColor 60 30 0
     SetFontSize 45
     PlayAlertSound 1 300
-    MinimapIcon 0 Yellow Star
-    PlayEffect Yellow
+    MinimapIcon 0 Pink Star
+    PlayEffect Pink
 
 # Essence currency
 Show
@@ -168,8 +238,8 @@ Show
     SetBackgroundColor 0 20 20 240
     SetFontSize 41
     PlayAlertSound 4 300
-    MinimapIcon 0 Yellow Star
-    PlayEffect Blue
+    MinimapIcon 0 Cyan Star
+    PlayEffect Cyan
 Show
     Class Currency
     BaseType "Remnant of Corruption"
@@ -178,7 +248,7 @@ Show
     SetBackgroundColor 20 0 0 240
     SetFontSize 41
     PlayAlertSound 4 300
-    MinimapIcon 0 Yellow Star
+    MinimapIcon 0 Red Star
     PlayEffect Red
 
 # Legion currency
@@ -190,8 +260,8 @@ Show
     SetBackgroundColor 10 0 10 240
     SetFontSize 41
     PlayAlertSound 4 250
-    MinimapIcon 0 Yellow Star
-    PlayEffect Blue
+    MinimapIcon 0 Purple Raindrop
+    PlayEffect Purple
 Show
     Class Incubator
     SetBorderColor 216 162 238
@@ -199,8 +269,8 @@ Show
     SetBackgroundColor 10 0 10 240
     SetFontSize 41
     PlayAlertSound 4 250
-    MinimapIcon 0 Yellow Star
-    PlayEffect Blue
+    MinimapIcon 0 Purple Kite
+    PlayEffect Purple
 
 # Breach currency
 Show
@@ -211,8 +281,8 @@ Show
     SetBackgroundColor 10 0 10 240
     SetFontSize 41
     PlayAlertSound 4 250
-    MinimapIcon 0 Yellow Star
-    PlayEffect Blue
+    MinimapIcon 0 Purple Raindrop
+    PlayEffect Purple
 Show
     Class Currency
     BaseType Blessing
@@ -221,8 +291,8 @@ Show
     SetBackgroundColor 10 0 10 240
     SetFontSize 43
     PlayAlertSound 4 300
-    MinimapIcon 0 Yellow Star
-    PlayEffect Blue
+    MinimapIcon 0 Purple Star
+    PlayEffect Purple
 
 # Bestiary nets
 Show
@@ -244,6 +314,16 @@ Show
     SetFontSize 36
     PlayAlertSound 4 200
     MinimapIcon 1 Blue Diamond
+    PlayEffect Blue
+Show
+    Class Currency
+    BaseType Resonator
+    SetBorderColor 10 200 250
+    SetTextColor 10 200 250
+    SetBackgroundColor 0 10 10 240
+    SetFontSize 36
+    PlayAlertSound 4 200
+    MinimapIcon 1 Blue Star
     PlayEffect Blue
 
 # Metamorph
@@ -274,7 +354,7 @@ Show # fractional currency
     SetBorderColor 158 153 142
     SetBackgroundColor 8 8 0 240
     SetFontSize 24
-    MinimapIcon 2 Yellow Star
+    MinimapIcon 2 Yellow Raindrop
 
 Show # unknown currency
     Class Currency
@@ -297,13 +377,6 @@ Show
     SetFontSize 38
     PlayAlertSound 2 300
 
-# base types to chance
-Show
-    Rarity Normal
-    #BaseType "Sorcerer Boots" "Occultist's Vestment" "Assassin's Garb" "Prophecy Wand" "Deicide Mask" "Jewelled Foil"
-    BaseType "Sorcerer Boots"
-    SetBorderColor 175 96 37
-
 # hammers for chisel recipe
 Show
     BaseType "Stone Hammer" "Rock Breaker" "Gavel"
@@ -320,12 +393,6 @@ Show
     Class Jewel
     Rarity Normal Magic Rare
     SetBorderColor 0 0 255
-
-# new base types
-Show
-    BaseType "Gripped Gloves" "Vanguard Belt" "Spiked Gloves" "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Fingerless Silk Gloves"
-    SetBorderColor 255 127 128
-    SetFontSize 40
 
 
 ### ========== Maps ======================================================== ###
