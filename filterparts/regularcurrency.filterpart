@@ -1,0 +1,104 @@
+# Currency
+Show
+    Class Currency
+    BaseType Portal Wisdom
+    SetBorderColor 170 158 130
+    SetTextColor 170 158 130
+    SetBackgroundColor 10 10 0 160
+    SetFontSize 20
+Show
+    Class Currency
+    BaseType "Armourer's Scrap" Whetstone
+    SetBorderColor 182 163 118
+    SetTextColor 182 163 118
+    SetBackgroundColor 10 10 0 200
+    SetFontSize 26
+    PlayAlertSound 3 10
+Show
+    Class Currency
+    BaseType Transmutation
+    SetBorderColor 182 163 118
+    SetTextColor 182 163 118
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 32
+    PlayAlertSound 3 10
+Show
+    Class Currency
+    BaseType Engineer Binding Chance
+    SetBorderColor 194 167 105
+    SetTextColor 194 167 105
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 34
+    PlayAlertSound 3 25
+Show
+    Class Currency
+    BaseType Chromatic
+    SetBorderColor 255 255 255
+    SetTextColor 194 167 105
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 34
+    PlayAlertSound 3 25
+    MinimapIcon 1 Yellow Star
+    PlayEffect Yellow Temp
+Show
+    Class Currency
+    BaseType Jeweller Blessed Silver Perandus Augmentation Fusing
+    SetBorderColor 206 172 93
+    SetTextColor 206 172 93
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 36
+    PlayAlertSound 3 50
+    MinimapIcon 1 Yellow Star
+    PlayEffect Yellow Temp
+Show
+    Class Currency
+    BaseType Alchemy Horizon Bauble
+    SetBorderColor 219 177 80
+    SetTextColor 219 177 80
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 38
+    PlayAlertSound 3 100
+    MinimapIcon 1 Yellow Star
+    PlayEffect Yellow Temp
+Show
+    Class Currency
+    BaseType Scouring Alteration Chisel Regal Regret "Vaal Orb"
+    SetBorderColor 231 180 68
+    SetTextColor 231 180 68
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 40
+    PlayAlertSound 3 150
+    MinimapIcon 0 Yellow Star
+    PlayEffect Yellow
+Show
+    Class Currency
+    BaseType Gemcutter Chaos Sextant Deck Harbinger Annulment
+    SetBorderColor 243 187 56
+    SetTextColor 243 187 56
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 42
+    PlayAlertSound 3 250
+    MinimapIcon 0 Yellow Star
+    PlayEffect Yellow
+Show
+    Class Currency
+    BaseType Divine Ancient Unmaking
+    SetBorderColor 255 192 45
+    SetTextColor 255 192 45
+    SetBackgroundColor 50 40 0 240
+    SetFontSize 45
+    PlayAlertSound 3 300
+    MinimapIcon 0 Yellow Star
+    PlayEffect Yellow
+Show
+    Class Currency
+    BaseType Mirror Exalted
+    SetBorderColor 255 192 45
+    #SetTextColor 255 192 45
+    #SetBackgroundColor 60 30 0 240
+    SetBackgroundColor 255 192 45 240
+    SetTextColor 60 30 0
+    SetFontSize 45
+    PlayAlertSound 1 300
+    MinimapIcon 0 Pink Star
+    PlayEffect Pink

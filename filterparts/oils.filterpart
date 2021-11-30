@@ -1,0 +1,69 @@
+Show
+    Class Currency
+    BaseType Oil
+    SetTextColor 194 155 37
+    SetBorderColor 194 155 37
+    SetBackgroundColor 20 15 4
+    MinimapIcon 1 Yellow Raindrop
+    PlayEffect Yellow
+    Continue
+Show
+    Class Currency
+    BaseType "Clear Oil"
+    SetFontSize 33
+    MinimapIcon 2 Yellow Raindrop
+Show
+    Class Currency
+    BaseType "Sepia Oil"
+    SetFontSize 34
+    MinimapIcon 2 Yellow Raindrop
+Show
+    Class Currency
+    BaseType "Amber Oil"
+    SetFontSize 35
+    MinimapIcon 2 Yellow Raindrop
+Show
+    Class Currency
+    BaseType "Verdant Oil"
+    SetFontSize 36
+Show
+    Class Currency
+    BaseType "Teal Oil"
+    SetFontSize 37
+Show
+    Class Currency
+    BaseType "Azure Oil"
+    SetFontSize 38
+Show
+    Class Currency
+    BaseType "Indigo Oil"
+    SetFontSize 39
+Show
+    Class Currency
+    BaseType "Violet Oil"
+    SetFontSize 40
+Show
+    Class Currency
+    BaseType "Crimson Oil"
+    SetFontSize 41
+    MinimapIcon 0 Yellow Raindrop
+Show
+    Class Currency
+    BaseType "Black Oil"
+    SetFontSize 42
+    MinimapIcon 0 Yellow Raindrop
+Show
+    Class Currency
+    BaseType "Opalescent Oil"
+    SetFontSize 43
+    MinimapIcon 0 Yellow Raindrop
+Show
+    Class Currency
+    BaseType "Silver Oil"
+    SetFontSize 44
+    MinimapIcon 0 Yellow Raindrop
+Show
+    Class Currency
+    BaseType "Golden Oil" "Tainted Oil"
+    SetFontSize 45
+    MinimapIcon 0 Yellow Raindrop

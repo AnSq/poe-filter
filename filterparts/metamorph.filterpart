@@ -1,0 +1,20 @@
+# Metamorph
+Show
+    Class Sample
+    SetBorderColor 10 250 100
+    SetTextColor 10 250 100
+    SetBackgroundColor 0 10 0 240
+    SetFontSize 38
+    PlayAlertSound 4 250
+    MinimapIcon 0 Green Diamond
+    PlayEffect Green
+Show
+    Class Currency
+    BaseType Catalyst
+    SetBorderColor 120 250 140
+    SetTextColor 120 250 140
+    SetBackgroundColor 0 10 0 240
+    SetFontSize 35
+    PlayAlertSound 4 200
+    MinimapIcon 1 Green Diamond
+    PlayEffect Green

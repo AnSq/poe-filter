@@ -1,0 +1,16 @@
+Show
+    Scourged True
+    MinimapIcon 2 Orange Hexagon
+    SetTextColor 239 203 107
+    Continue
+
+Show
+    Class Currency
+    BaseType Tainted
+    SetBorderColor 240 60 30
+    SetTextColor 231 180 68
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 36
+    PlayAlertSound 3 150
+    MinimapIcon 0 Orange Star
+    PlayEffect Yellow

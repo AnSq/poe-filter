@@ -1,0 +1,426 @@
+Show
+    Class Amulet
+    ItemLevel 68
+    MinimapIcon 1 Grey UpsideDownHouse
+    Continue
+
+Show
+    AnyEnchantment True
+    MinimapIcon 2 Cyan Pentagon
+    SetBorderColor 150 218 255
+    Continue
+
+Show
+    Class Helmet
+    AnyEnchantment True
+    MinimapIcon 0 Cyan Pentagon
+    SetBorderColor 150 218 255
+    Continue
+
+{scourge}
+
+{oils}
+
+Show
+    Class Heist Trinket Contract Blueprint
+    SetBorderColor 215 12 3
+    SetBackgroundColor 20 0 0 240
+    SetFontSize 42
+    PlayAlertSound 11 300
+    MinimapIcon 1 Red Square
+
+Show
+    Class Piece
+
+Show
+    Class Incursion
+    SetBorderColor 255 45 45
+    SetTextColor 255 45 45
+    SetBackgroundColor 20 0 0 240
+    SetFontSize 100
+    PlayAlertSound 3 300
+    PlayEffect Red
+    MinimapIcon 0 Red Circle
+
+{expedition}
+
+Show
+    Class "Pantheon Soul"
+
+Show
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    SetFontSize 40
+    SetBorderColor 135 0 220 255
+    MinimapIcon 0 Cyan Moon
+
+Show
+    Class "Abyss Jewel"
+    SetFontSize 35
+    SetBorderColor 0 100 0
+    MinimapIcon 2 Blue Diamond
+Show
+    BaseType "Stygian Vise"
+    SetFontSize 35
+    SetBorderColor 0 100 0
+
+# atlas base types
+Show
+    BaseType "Gripped Gloves" "Vanguard Belt" "Spiked Gloves" "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Fingerless Silk Gloves" "Apothecary's Gloves" "Fugitive Boots" "Convoking Wand" "Artillery Quiver" "Seaglass Amulet" "Iolite Ring" "Cerulean Ring" "Vermillion Ring"
+    SetBorderColor 255 127 128
+    SetFontSize 40
+
+
+### ========== Currency ==================================================== ###
+
+{regularcurrency}
+
+{essence}
+
+{legion}
+
+{breach}
+
+# Bestiary nets
+Show
+    Class Currency
+    BaseType "Thaumaturgical Net" "Necromancy Net"
+    SetBorderColor 255 45 45
+    SetTextColor 255 45 45
+    SetBackgroundColor 20 0 0 240
+    SetFontSize 41
+    PlayAlertSound 4 300
+
+{delve}
+
+{metamorph}
+
+Show # fractional currency
+    Class Currency
+    BaseType Fragment Shard
+    SetBorderColor 158 153 142
+    SetBackgroundColor 8 8 0 240
+    SetFontSize 24
+    MinimapIcon 2 Yellow Raindrop
+
+Show # unknown currency
+    Class Currency
+    SetBorderColor 200 200 0
+    SetBackgroundColor 30 30 0 240
+    PlayAlertSound 3 100
+    MinimapIcon 1 Yellow Star
+    PlayEffect Yellow
+
+### ========== Gems ======================================================== ###
+
+{gems}
+
+
+### ========== Normal Items 1 ============================================== ###
+
+# 20% quality normal items can be traded for quality improvement currency
+Show
+    Rarity Normal
+    Quality >= 20
+    #SetBorderColor 200 0 0
+    SetBackgroundColor 20 0 0 240
+    SetTextColor 220 0 0
+    SetFontSize 38
+    PlayAlertSound 2 300
+
+# hammers for chisel recipe
+Show
+    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+    Rarity Normal
+    SetBorderColor 107 130 126
+
+Show
+    Class Leaguestone
+    SetBorderColor 229 160 12
+    SetFontSize 40
+    PlayAlertSound 4 300
+
+Show
+    Class Jewel
+    Rarity Normal Magic Rare
+    SetBorderColor 0 0 255
+    MinimapIcon 2 Blue Diamond
+
+
+### ========== Maps ======================================================== ###
+
+{maps}
+
+
+### ========== Sockets 1 =================================================== ###
+
+# chromatic items
+Show
+    Sockets < 6
+    LinkedSockets >= 3
+    SocketGroup "RGB"
+    Rarity Normal Magic Rare
+    Height 3
+    Width 1
+    SetBorderColor 255 255 255
+    SetFontSize 38
+Show
+    Sockets < 6
+    LinkedSockets >= 3
+    SocketGroup "RGB"
+    Rarity Normal Magic Rare
+    Height 2
+    Width 2
+    SetBorderColor 255 255 255
+    SetFontSize 34
+Show
+    Sockets < 6
+    LinkedSockets >= 3
+    SocketGroup "RGB"
+    Rarity Normal Magic Rare
+    Height < 4
+    SetBorderColor 255 255 255
+Show
+#Hide
+    Rarity Normal Magic
+    Sockets < 6
+    LinkedSockets >= 3
+    SocketGroup "RGB"
+    Height >= 4
+    ItemLevel >= 20
+    SetBorderColor 255 255 255
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 128
+    Identified False
+    Corrupted False
+
+
+### ========== Rare Items ================================================== ###
+
+Show # Neversink's T1 rares
+    Sockets < 6
+    LinkedSockets < 5
+    Rarity Rare
+    BaseType "Ambusher" "Platinum Kris" "Imbued Wand" "Skean" "Ezomyte Dagger" "Titan Gauntlets" "Lion Pelt" "Slink Boots" "Titan Greaves" "Royal Burgonet" "Slink Gloves" "Hubris Circlet" "Titanium Spirit Shield" "Imperial Buckler" "Colossal Tower Shield" "Astral Plate"
+    SetFontSize 38
+    SetBackgroundColor 25 25 0 240
+    #SetBorderColor 100 100 0 240
+
+Show # Neversink's T2 rares
+    Sockets < 6
+    LinkedSockets < 5
+    Rarity Rare
+    BaseType "Gemini Claw" "Imperial Claw" "Tornado Wand" "Opal Wand" "Prophecy Wand" "Vaal Rapier" "Harpy Rapier" "Profane Wand" "Jewelled Foil" "Spiraled Foil" "Skean" "Kris" "Demon Dagger" "Vaal Axe" "Coronal Maul" "Harbinger Bow" "Void Sceptre" "Sambar Sceptre" "Siege Axe" "Crusader Boots" "Nightmare Bascinet" "Murder Boots" "Dragonscale Boots" "Vaal Greaves" "Stealth Boots" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Vaal Gauntlets" "Praetor Crown" "Deicide Mask" "Royal Burgonet" "Sinner Tricorne" "Solaris Circlet" "Arcanist Slippers" "Arcanist Gloves" "Mind Cage" "Sorcerer Boots" "Sorcerer Gloves" "Harmonic Spirit Shield" "Supreme Spiked Shield" "Glorious Plate" "Saintly Chainmail" "Spike-Point Arrow Quiver" "Vaal Regalia" "Carnal Armour" "Archon Kite Shield" "Elegant Round Shield" "Pinnacle Tower Shield" "Assassin's Garb"
+    SetFontSize 36
+    SetBackgroundColor 15 15 0 240
+    #SetBorderColor 80 80 0 240
+
+Show
+    BaseType "Breach Ring"
+    SetBorderColor 193 1 255
+
+Show
+    BaseType Talisman
+    SetFontSize 36
+    SetBorderColor 110 210 124
+
+Show # jewelery
+    Rarity Rare
+    Class Ring Amulet Belt
+    SetFontSize 34
+    SetBackgroundColor 25 25 0 240
+    SetBorderColor 0 100 100 240
+
+Show
+    Rarity Rare
+    Class Gloves
+    Identified False
+    Sockets < 6
+    LinkedSockets < 5
+    #SetBorderColor 150 80 80
+
+Show
+    Rarity Rare
+    Sockets < 6
+    LinkedSockets < 5
+
+
+### ========== Flasks ====================================================== ###
+
+{flasks}
+
+
+### ========== Divination Cards ============================================ ###
+
+{divcards}
+
+Show #unknown divcard
+    Class "Divination Card"
+    SetFontSize 40
+    SetBorderColor 255 255 255
+    PlayAlertSound 4 200
+    MinimapIcon 2 Blue Square
+
+
+### ========== Uniques ===================================================== ###
+
+Show
+    Class Map
+    Rarity Unique
+    SetFontSize 45
+    PlayAlertSound 6 300
+    SetBorderColor 255 255 255
+    MinimapIcon 0 Brown Circle
+    PlayEffect Brown
+
+Show
+    Rarity Unique
+    SetFontSize 45
+    PlayAlertSound 6 300
+    MinimapIcon 0 Brown Hexagon
+    PlayEffect Brown
+
+Show
+    Class "Quest Items" Labyrinth
+    SetFontSize 40
+
+
+### ========== Normal Items 2 ===============================================###
+
+Show
+    BaseType "Sacrificial Garb"
+    SetFontSize 48
+
+Show
+    Class Amulet
+    ItemLevel 68
+
+Hide
+    Rarity Normal
+    Sockets < 6
+    LinkedSockets < 5
+    ItemLevel >= 68
+    Identified False
+    Corrupted False
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 128
+
+
+### ========== Sockets 2 =================================================== ###
+
+Show
+    Sockets = 6
+    LinkedSockets < 5
+    SetFontSize 42
+    SetBorderColor 100 250 80
+    PlayAlertSound 7 300
+    MinimapIcon 1 Green Triangle
+    PlayEffect Green
+
+Show
+    LinkedSockets = 5
+    SetFontSize 35
+    SetBorderColor 255 180 100
+    PlayAlertSound 7 300
+
+Show
+    Rarity Rare
+    Sockets = 6
+    LinkedSockets = 6
+    SetFontSize 45
+    SetBorderColor 0 0 0
+    SetTextColor 0 0 0
+    SetBackgroundColor 255 255 119 240
+    PlayAlertSound 10 300
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+Show
+    Rarity Magic
+    Sockets = 6
+    LinkedSockets = 6
+    SetFontSize 45
+    SetBorderColor 0 0 0
+    SetTextColor 0 0 0
+    SetBackgroundColor 136 136 255 240
+    PlayAlertSound 10 300
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+Show
+    Rarity Normal
+    Sockets = 6
+    LinkedSockets = 6
+    SetFontSize 45
+    SetBorderColor 0 0 0
+    SetTextColor 0 0 0
+    SetBackgroundColor 200 200 200 240
+    PlayAlertSound 10 300
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+
+Show
+    Sockets >= 5
+    ItemLevel < 68
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 192
+
+Show
+    SocketGroup "W"
+    SetBorderColor 200 200 127
+    PlayAlertSound 2 100
+
+
+### ========== Everything Else ============================================= ###
+
+Show
+    Corrupted True
+    SetFontSize 1
+    SetBackgroundColor 0 0 0 196
+    SetBorderColor 128 32 32
+
+Show
+    Identified True
+    SetFontSize 1
+    SetBackgroundColor 0 0 0 196
+    SetBorderColor 32 128 64
+
+Show
+    ItemLevel <= 60
+    LinkedSockets >= 4
+
+# hide everything else
+Hide
+#Show
+    ItemLevel >= 20
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 128
+    SetBorderColor 0 0 0
+
+
+### ========== Leveling ==================================================== ###
+
+Show
+    LinkedSockets >= 3
+    SocketGroup "RGB"
+    Height >= 4
+    ItemLevel < 20
+    SetBorderColor 255 255 255
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 192
+
+Show
+    Class Flask
+    ItemLevel < 20
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 192
+
+Show
+    Rarity Normal
+    Sockets < 6
+    LinkedSockets < 5
+    ItemLevel < 20
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 192
+
+Show
+    ItemLevel < 20
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 192

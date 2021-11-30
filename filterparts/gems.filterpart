@@ -1,0 +1,30 @@
+# superior gems
+Show
+    Class Gem
+    Quality >= 1
+    SetFontSize 36
+    SetBorderColor 255 0 0
+    PlayAlertSound 5 200
+    MinimapIcon 1 Cyan Kite
+
+Show
+    Class Gem
+    GemLevel >= 18
+    SetFontSize 36
+    SetBorderColor 0 255 0
+    PlayAlertSound 5 200
+    MinimapIcon 1 Cyan Kite
+
+# drop-only
+Show
+    Class Gem
+    BaseType Empower Enhance Enlighten Portal Vaal "Block Chance Reduction Support" Awakened
+    SetFontSize 42
+    SetBorderColor 255 255 0
+    PlayAlertSound 5 300
+    MinimapIcon 0 Cyan Kite
+
+Show
+    Class Gem
+    SetFontSize 20
+    SetBorderColor 0 135 255

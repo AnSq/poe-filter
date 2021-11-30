@@ -1,0 +1,21 @@
+Show
+    Class Flask
+    Rarity Normal Magic
+    Quality >= 1
+    SetBorderColor 255 0 0
+
+Show
+    Class "Utility Flask"
+    Rarity Normal Magic
+    SetBorderColor 0 190 0
+    SetBackgroundColor 0 50 0 240
+    SetFontSize 25
+
+Hide
+    Class Flask
+    Rarity Normal Magic
+    ItemLevel >= 20
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 128
+    Identified False
+    Corrupted False

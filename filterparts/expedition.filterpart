@@ -1,0 +1,15 @@
+Show
+    Class Expedition
+    SetBorderColor 115 177 254
+    SetTextColor 115 177 254
+    SetBackgroundColor 10 15 20 240
+    SetFontSize 100
+    PlayAlertSound 3 300
+    PlayEffect Blue
+    MinimapIcon 0 Blue Circle
+
+# Expedition Ward items
+Show
+    BaseType "Runic Helm" "Runic Crest" "Runic Crown" "Runic Greaves" "Runic Sollerets" "Runic Sabatons" "Runic Gloves" "Runic Gages" "Runic Gauntlets"
+    SetBorderColor 255 255 0
+    Continue

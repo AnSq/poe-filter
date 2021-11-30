@@ -1,0 +1,21 @@
+# Essence currency
+Show
+    Class Currency
+    BaseType Essence
+    SetBorderColor 45 255 192
+    SetTextColor 45 255 192
+    SetBackgroundColor 0 20 20 240
+    SetFontSize 41
+    PlayAlertSound 4 300
+    MinimapIcon 0 Cyan Star
+    PlayEffect Cyan
+Show
+    Class Currency
+    BaseType "Remnant of Corruption"
+    SetBorderColor 255 45 45
+    SetTextColor 255 45 45
+    SetBackgroundColor 20 0 0 240
+    SetFontSize 41
+    PlayAlertSound 4 300
+    MinimapIcon 0 Red Star
+    PlayEffect Red

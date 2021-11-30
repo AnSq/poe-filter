@@ -1,0 +1,35 @@
+Show
+    Class "Misc Map Items" Region
+    SetBorderColor 255 255 255
+    SetFontSize 40
+    MinimapIcon 1 White Circle
+    PlayEffect White
+
+# White Maps
+Show
+    Class Map
+    MapTier <= 5
+    Rarity Normal Magic Rare
+    SetBorderColor 223 223 233
+    SetFontSize 40
+    MinimapIcon 1 White Circle
+    PlayEffect White
+
+# Red Maps
+Show
+    Class Map
+    MapTier >= 11
+    Rarity Normal Magic Rare
+    SetBorderColor 202 25 15
+    SetFontSize 40
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+
+# Yellow Maps
+Show
+    Class Map
+    Rarity Normal Magic Rare
+    SetBorderColor 234 198 52
+    SetFontSize 40
+    MinimapIcon 1 Yellow Circle
+    PlayEffect Yellow

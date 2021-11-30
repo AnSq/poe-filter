@@ -1,0 +1,20 @@
+# Legion currency
+Show
+    Class Currency
+    BaseType Timeless
+    SetBorderColor 181 138 251
+    SetTextColor 181 138 251
+    SetBackgroundColor 10 0 10 240
+    SetFontSize 41
+    PlayAlertSound 4 250
+    MinimapIcon 0 Purple Raindrop
+    PlayEffect Purple
+Show
+    Class Incubator
+    SetBorderColor 216 162 238
+    SetTextColor 216 162 238
+    SetBackgroundColor 10 0 10 240
+    SetFontSize 41
+    PlayAlertSound 4 250
+    MinimapIcon 0 Purple Kite
+    PlayEffect Purple

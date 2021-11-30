@@ -1,0 +1,21 @@
+# Delve
+Show
+    Class Currency
+    BaseType Fossil
+    SetBorderColor 10 200 250
+    SetTextColor 10 200 250
+    SetBackgroundColor 0 10 10 240
+    SetFontSize 36
+    PlayAlertSound 4 200
+    MinimapIcon 1 Blue Diamond
+    PlayEffect Blue
+Show
+    Class Currency
+    BaseType Resonator
+    SetBorderColor 10 200 250
+    SetTextColor 10 200 250
+    SetBackgroundColor 0 10 10 240
+    SetFontSize 36
+    PlayAlertSound 4 200
+    MinimapIcon 1 Blue Star
+    PlayEffect Blue

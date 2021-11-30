@@ -1,0 +1,21 @@
+# Breach currency
+Show
+    Class Currency
+    BaseType Splinter
+    SetBorderColor 193 1 255
+    SetTextColor 193 1 255
+    SetBackgroundColor 10 0 10 240
+    SetFontSize 41
+    PlayAlertSound 4 250
+    MinimapIcon 0 Purple Raindrop
+    PlayEffect Purple
+Show
+    Class Currency
+    BaseType Blessing
+    SetBorderColor 193 1 255
+    SetTextColor 193 1 255
+    SetBackgroundColor 10 0 10 240
+    SetFontSize 43
+    PlayAlertSound 4 300
+    MinimapIcon 0 Purple Star
+    PlayEffect Purple
