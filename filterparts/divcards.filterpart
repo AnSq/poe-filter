@@ -1,65 +1,73 @@
 #updated 2021-11-30 (Scourge league)
 Show #tier1 (250-inf]
     Class Card
-    BaseType "House of Mirrors" "Unrequited Love" "The Demon" "The Doctor" "The Fiend" "Brother's Stash" "The Cheater" "The Immortal" "Succor of the Sinless"
+    BaseType "House of Mirrors" "Unrequited Love" "The Doctor" "The Demon" "The Fiend" "The Cheater" "The Immortal" "Succor of the Sinless"
     SetBorderColor     3 46 64
     SetTextColor       3 46 64
     SetBackgroundColor 14 186 255 250
+    MinimapIcon 0 Blue Square
     SetFontSize 45
     PlayAlertSound 1 300
 Show #tier2 (100-250]
     Class Card
-    BaseType "Wealth and Power" "The Nurse" "Alluring Bounty" "Gift of Asenath" "Love Through Ice" "Desecrated Virtue" "Seven Years Bad Luck" "The Scout" "Beauty Through Death" "The Dragon's Heart"
+    BaseType "Brother's Stash" "Wealth and Power" "The Nurse" "Alluring Bounty" "Gift of Asenath" "Love Through Ice" "Desecrated Virtue" "Seven Years Bad Luck" "The Scout" "Beauty Through Death"
     SetBorderColor     22 182 246
     SetTextColor       22 182 246
     SetBackgroundColor 3 39 55 250
+    MinimapIcon 0 Blue Square
     SetFontSize 42
     PlayAlertSound 1 300
 Show #tier3 (40-100]
     Class Card
-    BaseType "Eternal Bonds" "Abandoned Wealth" "The Enlightened" "The Samurai's Eye" "The Strategist" "Nook's Crown" "Broken Promises" "The Academic" "The Iron Bard" "Winter's Embrace"
+    BaseType "The Dragon's Heart" "Eternal Bonds" "Abandoned Wealth" "The Enlightened" "The Samurai's Eye" "The Strategist" "Broken Promises" "The Academic" "Nook's Crown" "The Iron Bard" "Winter's Embrace"
     SetBorderColor     30 177 237
     SetTextColor       30 177 237
     SetBackgroundColor 2 33 46 250
+    MinimapIcon 0 Blue Square
     SetFontSize 38
     PlayAlertSound 4 264
 Show #tier4 (15-40]
     Class Card
-    BaseType "Deadly Joy" "The Artist" "Immortal Resolve" "The Saint's Treasure" "Pride of the First Ones" "Ambitious Obsession" "Keeper's Corruption" "The Damned" "The Patient" "Dementophobia" "Luminous Trove" "The Astromancer" "The Eye of Terror" "The Long Con"
+    BaseType "The Artist" "Deadly Joy" "Immortal Resolve" "The Saint's Treasure" "Pride of the First Ones" "Ambitious Obsession" "Keeper's Corruption" "The Damned" "The Patient" "Dementophobia" "Luminous Trove" "The Astromancer" "The Eye of Terror" "The Long Con"
     SetBorderColor     38 173 228
     SetTextColor       38 173 228
     SetBackgroundColor 2 26 37 250
+    MinimapIcon 0 Blue Square
     SetFontSize 35
     PlayAlertSound 4 221
 Show #tier5 (6-15]
     Class Card
-    BaseType "The Aspirant" "The Hoarder" "The Gulf" "The Price of Loyalty" "The White Knight" "The Risk" "The Sustenance" "A Note in the Wind" "The Bitter Blossom" "The Eldritch Decay" "The Bargain"
+    BaseType "The Aspirant" "The Hoarder" "The Gulf" "The Price of Loyalty" "The White Knight" "The Risk" "The Sustenance" "A Note in the Wind" "The Bitter Blossom" "The Eldritch Decay"
     SetBorderColor     46 169 218
     SetTextColor       46 169 218
     SetBackgroundColor 1 20 27 250
+    MinimapIcon 1 Blue Square
     SetFontSize 32
     PlayAlertSound 4 179
 Show #tier6 (2.4-6]
     Class Card
-    BaseType "The Celestial Stone" "The Greatest Intentions" "A Modest Request" "Chaotic Disposition" "Chasing Risk" "Council of Cats" "Dark Dreams" "Fateful Meeting" "Hunter's Reward" "Remembrance" "The Eternal War" "The Rabbit's Foot" "The Sacrifice" "The Sephirot" "Underground Forest" "A Familiar Call" "Azyran's Reward" "Brotherhood in Exile" "Desperate Crusade" "Etched in Blood" "Lachrymal Necrosis" "Mawr Blaidd" "The Catch" "The Emptiness" "The Forgotten Treasure" "The Hive of Knowledge" "The Old Man" "The Price of Prescience" "The Progeny of Lunaris" "The Spark and the Flame" "The Wind" "Void of the Elements" "Burning Blood" "The Chosen" "A Stone Perfected" "Brush, Paint and Palette" "Deathly Designs" "Disdain" "Dying Light" "Peaceful Moments" "Terrible Secret of Space" "The Awakened" "The Bones" "The Enthusiasts" "The Fishmonger" "The Hook" "The Shortcut" "The Undaunted" "The Undisputed" "The Vast" "The Whiteout" "The World Eater" "The Thaumaturgist" "The Fool" "The Valkyrie" "The Cacophony" "The Polymath" "The Body" "The Escape" "The Life Thief" "Pride Before the Fall"
+    BaseType "The Celestial Stone" "The Greatest Intentions" "A Modest Request" "Chaotic Disposition" "Chasing Risk" "Council of Cats" "Dark Dreams" "Fateful Meeting" "Hunter's Reward" "Remembrance" "The Bargain" "The Eternal War" "The Old Man" "The Rabbit's Foot" "The Sacrifice" "The Sephirot" "Underground Forest" "Brotherhood in Exile" "A Familiar Call" "Azyran's Reward" "Desperate Crusade" "Etched in Blood" "Lachrymal Necrosis" "Mawr Blaidd" "The Catch" "The Emptiness" "The Forgotten Treasure" "The Hive of Knowledge" "The Price of Prescience" "The Progeny of Lunaris" "The Spark and the Flame" "The Wind" "Void of the Elements" "Burning Blood" "A Stone Perfected" "Brush, Paint and Palette" "Deathly Designs" "Disdain" "Dying Light" "Peaceful Moments" "The Awakened" "The Bones" "The Chosen" "The Enthusiasts" "The Fishmonger" "The Fool" "The Hook" "The Landing" "The Shortcut" "The Thaumaturgist" "The Undaunted" "The Undisputed" "The Valkyrie" "The Vast" "The Whiteout" "The World Eater" "Draped in Dreams" "The Heroic Shot" "The Life Thief" "Coveted Possession" "Demigod's Wager" "Terrible Secret of Space"
     SetBorderColor     54 165 209
     SetTextColor       54 165 209
     SetBackgroundColor 1 13 18 250
+    MinimapIcon 1 Blue Square
     SetFontSize 29
     PlayAlertSound 4 136
 Show #tier7 (1-2.4]
     Class Card
-    BaseType "Rebirth" "No Traces" "The Blessing of Moosh" "The Landing" "A Sea of Blue" "Arrogance of the Vaal" "Baited Expectations" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Costly Curio" "Coveted Possession" "Demigod's Wager" "Divine Justice" "Draped in Dreams" "Dying Anguish" "Glimmer of Hope" "Guardian's Challenge" "Haunting Shadows" "Heterochromia" "Last Hope" "Left to Fate" "Lingering Remnants" "Lost Worlds" "Lucky Deck" "Monochrome" "More is Never Enough" "Perfection" "Prometheus' Armoury" "Society's Remorse" "The Avenger" "The Betrayal" "The Breach" "The Brittle Emperor" "The Cartographer" "The Cataclysm" "The Celestial Justicar" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deep Ones" "The Dreamer" "The Easy Stroll" "The Endless Darkness" "The Fletcher" "The Golden Era" "The Hale Heart" "The Harvester" "The Heroic Shot" "The Hunger" "The Innocent" "The Insatiable" "The Jester" "The King's Heart" "The Master" "The Mercenary" "The Obscured" "The Offering" "The Offspring" "The One With All" "The Pact" "The Prince of Darkness" "The Professor" "The Queen" "The Road to Power" "The Seeker" "The Side Quest" "The Siren" "The Soul" "The Spoiled Prince" "The Surveyor" "The Traitor" "The Twins" "The Unexpected Prize" "The Void" "The Warlord" "The Wilted Rose" "The Wolf's Legacy" "The Wolven King's Bite" "The Wretched" "Time-Lost Relic" "Triskaidekaphobia" "The Valley of Steel Boxes" "Unchained" "Treasure Hunter" "Three Faces in the Dark" "The Poet" "The Skeleton" "Three Voices" "Merciless Armament" "The Wolf" "The Lord in Black" "The Throne" "The Penitent" "Harmony of Souls" "The Eye of the Dragon" "The Ruthless Ceinture" "The Journey" "The Arena Champion" "The Porcupine" "The Card Sharp" "The Scholar" "The Journalist" "The Tumbleweed"
+    BaseType "Pride Before the Fall" "The Polymath" "A Sea of Blue" "Arrogance of the Vaal" "Baited Expectations" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Costly Curio" "Divine Justice" "Dying Anguish" "Guardian's Challenge" "Haunting Shadows" "Heterochromia" "Last Hope" "Left to Fate" "Lingering Remnants" "Lost Worlds" "Lucky Deck" "Merciless Armament" "Monochrome" "More is Never Enough" "No Traces" "Perfection" "Prometheus' Armoury" "Rebirth" "Society's Remorse" "The Avenger" "The Betrayal" "The Body" "The Breach" "The Brittle Emperor" "The Cacophony" "The Card Sharp" "The Cartographer" "The Cataclysm" "The Celestial Justicar" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Deep Ones" "The Dreamer" "The Easy Stroll" "The Endless Darkness" "The Escape" "The Fletcher" "The Golden Era" "The Hale Heart" "The Harvester" "The Hunger" "The Innocent" "The Insatiable" "The Jester" "The Journey" "The King's Heart" "The Lord in Black" "The Master" "The Mercenary" "The Obscured" "The Offering" "The Offspring" "The One With All" "The Pact" "The Penitent" "The Porcupine" "The Prince of Darkness" "The Professor" "The Queen" "The Road to Power" "The Seeker" "The Side Quest" "The Siren" "The Skeleton" "The Soul" "The Spoiled Prince" "The Surveyor" "The Traitor" "The Twins" "The Unexpected Prize" "The Void" "The Warlord" "The Wilted Rose" "The Wolf's Legacy" "The Wolven King's Bite" "The Wretched" "Time-Lost Relic" "Triskaidekaphobia" "Treasure Hunter" "The Valley of Steel Boxes" "The Blessing of Moosh" "The Deal" "The Throne" "Three Voices" "The Ruthless Ceinture" "Acclimatisation" "Three Faces in the Dark" "The Arena Champion" "The Tumbleweed" "Cartographer's Delight" "Reckless Ambition" "The Scholar" "The Poet" "The Journalist"
     SetBorderColor     62 160 200
     SetTextColor       62 160 200
     SetBackgroundColor 0 7 9 250
+    MinimapIcon 2 Blue Square
     SetFontSize 25
     PlayAlertSound 4 93
 Show #tier8 (0-1]
     Class Card
-    BaseType "A Dab of Ink" "A Mother's Parting Gift" "Acclimatisation" "Akil's Prophecy" "Alone in the Darkness" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" "Audacity" "Blind Venture" "Boon of Justice" "Boundless Realms" "Call to the First Ones" "Cameria's Cut" "Cartographer's Delight" "Cursed Words" "Dark Temptation" "Death" "Destined to Crumble" "Dialla's Subjugation" "Doedre's Madness" "Earth Drinker" "Echoes of Love" "Emperor of Purity" "Emperor's Luck" "Forbidden Power" "Friendship" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Her Mask" "Hope" "Hubris" "Humility" "Hunter's Resolve" "Imperial Legacy" "Jack in the Box" "Lantador's Lost Love" "Light and Truth" "Loyalty" "Lucky Connections" "Lysah's Respite" "Might is Right" "Mitts" "Prejudice" "Prosperity" "Rain Tempter" "Rain of Chaos" "Rats" "Reckless Ambition" "Sambodhi's Vow" "Sambodhi's Wisdom" "Scholar of the Seas" "Shard of Fate" "Struck by Lightning" "The Admirer" "The Adventuring Spirit" "The Aesthete" "The Archmage's Right Hand" "The Army of Blood" "The Battle Born" "The Bear Woman" "The Beast" "The Blazing Fire" "The Cache" "The Calling" "The Carrion Crow" "The Catalyst" "The Chains that Bind" "The Coming Storm" "The Conduit" "The Craving" "The Cursed King" "The Deceiver" "The Demoness" "The Doppelganger" "The Dragon" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Endurance" "The Ethereal" "The Explorer" "The Fathomless Depths" "The Feast" "The Flora's Gift" "The Formless Sea" "The Forsaken" "The Fox" "The Fox in the Brambles" "The Gambler" "The Garish Power" "The Gemcutter" "The Gentleman" "The Gladiator" "The Hermit" "The Incantation" "The Inoculated" "The Inventor" "The Jeweller's Boon" "The King's Blade" "The Last One Standing" "The Last Supper" "The Lich" "The Lion" "The Long Watch" "The Lord of Celebration" "The Lover" "The Lunaris Priestess" "The Mad King" "The Master Artisan" "The Messenger" "The Metalsmith's Gift" "The Mind's Eyes" "The Mountain" "The Oath" "The Opulent" "The Pack Leader" "The Price of Protection" "The Primordial" "The Puzzle" "The Rabid Rhoa" "The Realm" "The Rite of Elements" "The Scarred Meadow" "The Scavenger" "The Sigil" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surgeon" "The Survivalist" "The Sword King's Salute" "The Tinkerer's Table" "The Tower" "The Trial" "The Twilight Moon" "The Tyrant" "The Union" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "The Wolf's Shadow" "The Wolverine" "The Wrath" "Thirst for Knowledge" "Thunderous Skies" "Tranquillity" "Turn the Other Cheek" "Vanity" "Vile Power" "Vinia's Token" "Volatile Power"
+    BaseType "A Dab of Ink" "A Mother's Parting Gift" "Akil's Prophecy" "Alone in the Darkness" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" "Audacity" "Blind Venture" "Boon of Justice" "Boundless Realms" "Call to the First Ones" "Cameria's Cut" "Cursed Words" "Dark Temptation" "Death" "Destined to Crumble" "Dialla's Subjugation" "Doedre's Madness" "Earth Drinker" "Echoes of Love" "Emperor of Purity" "Emperor's Luck" "Forbidden Power" "Friendship" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Harmony of Souls" "Her Mask" "Hope" "Hubris" "Humility" "Hunter's Resolve" "Imperial Legacy" "Jack in the Box" "Lantador's Lost Love" "Light and Truth" "Loyalty" "Lucky Connections" "Lysah's Respite" "Might is Right" "Mitts" "Prejudice" "Prosperity" "Rain Tempter" "Rain of Chaos" "Rats" "Sambodhi's Vow" "Sambodhi's Wisdom" "Scholar of the Seas" "Shard of Fate" "Struck by Lightning" "The Admirer" "The Adventuring Spirit" "The Aesthete" "The Archmage's Right Hand" "The Army of Blood" "The Battle Born" "The Bear Woman" "The Beast" "The Blazing Fire" "The Cache" "The Calling" "The Carrion Crow" "The Catalyst" "The Chains that Bind" "The Coming Storm" "The Conduit" "The Craving" "The Cursed King" "The Deceiver" "The Demoness" "The Doppelganger" "The Dragon" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Endurance" "The Ethereal" "The Explorer" "The Eye of the Dragon" "The Fathomless Depths" "The Feast" "The Flora's Gift" "The Formless Sea" "The Forsaken" "The Fox" "The Fox in the Brambles" "The Gambler" "The Garish Power" "The Gemcutter" "The Gentleman" "The Gladiator" "The Hermit" "The Incantation" "The Inoculated" "The Inventor" "The Jeweller's Boon" "The King's Blade" "The Last One Standing" "The Last Supper" "The Lich" "The Lion" "The Long Watch" "The Lord of Celebration" "The Lover" "The Lunaris Priestess" "The Mad King" "The Master Artisan" "The Messenger" "The Metalsmith's Gift" "The Mind's Eyes" "The Mountain" "The Oath" "The Opulent" "The Pack Leader" "The Price of Protection" "The Primordial" "The Puzzle" "The Rabid Rhoa" "The Realm" "The Rite of Elements" "The Scarred Meadow" "The Scavenger" "The Sigil" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surgeon" "The Survivalist" "The Sword King's Salute" "The Tinkerer's Table" "The Tower" "The Trial" "The Twilight Moon" "The Tyrant" "The Union" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "The Wolf" "The Wolf's Shadow" "The Wolverine" "The Wrath" "Thirst for Knowledge" "Thunderous Skies" "Tranquillity" "Turn the Other Cheek" "Unchained" "Vanity" "Vile Power" "Vinia's Token" "Volatile Power"
     SetBorderColor     70 156 191
     SetTextColor       70 156 191
     SetBackgroundColor 0 0 0 250
+    MinimapIcon 2 Blue Square
     SetFontSize 22
     PlayAlertSound 4 50

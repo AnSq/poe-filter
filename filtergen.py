@@ -44,7 +44,7 @@ def interpolate_colors(start, end, steps):
     return [[int(round(x[0]+step*x[1])) for x in zip(start, step_sizes)] for step in range(steps)]
 
 
-def format_filter(border0, border1, text0, text1, back0, back1, size0, size1, volume0, volume1, steps, sounds, members, thresholds, invert=None):
+def format_filter(border0, border1, text0, text1, back0, back1, size0, size1, volume0, volume1, steps, iconsize, sounds, members, thresholds, invert=None):
     border = interpolate_colors(border0, border1, steps)
     text   = interpolate_colors(text0,   text1, steps)
     back   = interpolate_colors(back0,   back1, steps)
@@ -69,9 +69,10 @@ def format_filter(border0, border1, text0, text1, back0, back1, size0, size1, vo
         "    SetBorderColor     {border[0]} {border[1]} {border[2]}\n"\
         "    SetTextColor       {text[0]} {text[1]} {text[2]}\n"\
         "    SetBackgroundColor {back[0]} {back[1]} {back[2]} 250\n"\
+        "    MinimapIcon {iconsize} Blue Square\n"\
         "    SetFontSize {size}\n"\
         "    PlayAlertSound {sound} {volume}\n" \
-        .format(tier=i+1, low=lows[i], high=highs[i], members=members[i], border=border[i], text=text[i], back=back[i], size=size[i], sound=sounds[i], volume=min(volume[i],300))
+        .format(tier=i+1, low=lows[i], high=highs[i], members=members[i], border=border[i], text=text[i], back=back[i], iconsize=iconsize[i], size=size[i], sound=sounds[i], volume=min(volume[i],300))
     return result
 
 
@@ -82,6 +83,8 @@ def main(outfile):
         print(c)
 
     thresholds = (1, 2.4, 6, 15, 40, 100, 250, float("+inf"))
+    iconsize = tuple(reversed((2, 2, 1, 1, 0, 0, 0, 0)))
+
     tiers = [list() for x in range(len(thresholds))]
 
     for c in cards:
@@ -109,7 +112,7 @@ def main(outfile):
     sounds = [1]*num_top + [4]*(steps - num_top)
 
     output = "#updated {} ({} league)\n".format(time.strftime("%Y-%m-%d", time.gmtime()), league)
-    output += format_filter(border0, border1, text0, text1, back0, back1, size0, size1, volume0, volume1, steps, sounds, members, thresholds, invert=0)
+    output += format_filter(border0, border1, text0, text1, back0, back1, size0, size1, volume0, volume1, steps, iconsize, sounds, members, thresholds, invert=0)
 
     with open(outfile, "w") as w:
         w.write(output)
