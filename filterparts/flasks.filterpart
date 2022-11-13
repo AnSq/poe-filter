@@ -11,11 +11,23 @@ Show
     SetBackgroundColor 0 50 0 240
     SetFontSize 25
 
+
+Show
+    Class Flask
+    Rarity Normal Magic
+    Quality 0
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 128
+    Continue
+
+{levelingflasks}
+
+
 Hide
     Class Flask
     Rarity Normal Magic
-    ItemLevel >= 20
-    SetFontSize 1
-    SetBackgroundColor 64 64 64 128
+    Quality 0
     Identified False
     Corrupted False
+    SetFontSize 1
+    SetBackgroundColor 64 64 64 128

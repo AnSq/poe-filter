@@ -4,6 +4,7 @@ import requests
 import json
 import re
 import time
+import textwrap
 
 
 user_agent = "AnSq/poe-filter/1.0"
@@ -44,7 +45,7 @@ def interpolate_colors(start, end, steps):
     return [[int(round(x[0]+step*x[1])) for x in zip(start, step_sizes)] for step in range(steps)]
 
 
-def format_filter(border0, border1, text0, text1, back0, back1, size0, size1, volume0, volume1, steps, iconsize, sounds, members, thresholds, invert=None):
+def format_divcards_filter(border0, border1, text0, text1, back0, back1, size0, size1, volume0, volume1, steps, iconsize, sounds, members, thresholds, invert=None):
     border = interpolate_colors(border0, border1, steps)
     text   = interpolate_colors(text0,   text1, steps)
     back   = interpolate_colors(back0,   back1, steps)
@@ -65,7 +66,7 @@ def format_filter(border0, border1, text0, text1, back0, back1, size0, size1, vo
         result += \
         "Show #tier{tier} ({low}-{high}]\n"\
         "    Class Card\n"\
-        "    BaseType {members}\n"\
+        "    BaseType == {members}\n"\
         "    SetBorderColor     {border[0]} {border[1]} {border[2]}\n"\
         "    SetTextColor       {text[0]} {text[1]} {text[2]}\n"\
         "    SetBackgroundColor {back[0]} {back[1]} {back[2]} 250\n"\
@@ -76,11 +77,37 @@ def format_filter(border0, border1, text0, text1, back0, back1, size0, size1, vo
     return result
 
 
-def main(outfile):
+def format_levelingflasks_filter(flask_sizes, flask_levels, font_sizes):
+    filter_rule = textwrap.dedent("""\
+        Show
+            Class Flask
+            BaseType {size}
+            Rarity Normal Magic
+            Quality 0
+            AreaLevel >= {min_level}
+            AreaLevel < {max_level}
+            SetFontSize {font_size}
+            """)
+
+    result = ""
+
+    for i,size in enumerate(flask_sizes):
+        for j,font_size in enumerate(font_sizes):
+            result += filter_rule.format(
+                size      = size,
+                min_level = (1 if j == 0 else flask_levels[i+j]),
+                max_level = flask_levels[i+j+1],
+                font_size = font_size
+            )
+
+    return result
+
+
+def make_divcards(outfile):
     league = get_current_league()
     cards = get_cards(league)
-    for c in cards:
-        print(c)
+    #for c in cards:
+    #    print(c)
 
     thresholds = (1, 2.4, 6, 15, 40, 100, 250, float("+inf"))
     iconsize = tuple(reversed((2, 2, 1, 1, 0, 0, 0, 0)))
@@ -104,7 +131,7 @@ def main(outfile):
     back0 = (3, 46, 64)
     back1 = (0, 0, 0)
     size0 = 45
-    size1 = 22
+    size1 = 30
     volume0 = 350
     volume1 = 50
 
@@ -112,11 +139,36 @@ def main(outfile):
     sounds = [1]*num_top + [4]*(steps - num_top)
 
     output = "#updated {} ({} league)\n".format(time.strftime("%Y-%m-%d", time.gmtime()), league)
-    output += format_filter(border0, border1, text0, text1, back0, back1, size0, size1, volume0, volume1, steps, iconsize, sounds, members, thresholds, invert=0)
+    output += format_divcards_filter(border0, border1, text0, text1, back0, back1, size0, size1, volume0, volume1, steps, iconsize, sounds, members, thresholds, invert=0)
 
     with open(outfile, "w") as w:
         w.write(output)
 
 
+def make_levelingflasks(outfile):
+    output = ""
+
+    flask_sizes   = ('"Small Hybrid"', '"Medium Hybrid"', '"Large Hybrid"', '"Colossal Hybrid"', '"Sacred Hybrid"', '"Hallowed Hybrid"')
+    flask_levels  = (10, 20, 30, 40, 50, 60)
+    flask_levels += (68, 72)
+    font_sizes    = (28, 18)
+    output += "# Hybrid Flasks - top {} for leveling\n".format(len(font_sizes))
+    output += format_levelingflasks_filter(flask_sizes, flask_levels, font_sizes)
+
+    flask_sizes   = ("Small", "Medium", "Large", "Greater", "Grand", "Giant", "Colossal", "Sacred", "Hallowed", "Sanctified", "Divine", "Eternal")
+    flask_levels  = (1, 3, 6, 12, 18, 24, 30, 36, 42, 50, 60, 65)
+    flask_levels += (68, 70, 72)
+    font_sizes    = (30, 24, 18)
+    output += "\n# Life and Mana Flasks - top {} for leveling\n".format(len(font_sizes))
+    output += format_levelingflasks_filter(flask_sizes, flask_levels, font_sizes)
+
+    with open(outfile, "w") as w:
+        w.write(output)
+
+
+def main():
+    make_divcards("filterparts/divcards.filterpart")
+    make_levelingflasks("filterparts/levelingflasks.filterpart")
+
 if __name__ == "__main__":
-    main("filterparts/divcards.filterpart")
+    main()

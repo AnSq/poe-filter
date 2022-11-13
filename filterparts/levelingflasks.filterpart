@@ -1,0 +1,387 @@
+# Hybrid Flasks - top 2 for leveling
+Show
+    Class Flask
+    BaseType "Small Hybrid"
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 20
+    SetFontSize 28
+Show
+    Class Flask
+    BaseType "Small Hybrid"
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 20
+    AreaLevel < 30
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType "Medium Hybrid"
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 30
+    SetFontSize 28
+Show
+    Class Flask
+    BaseType "Medium Hybrid"
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 30
+    AreaLevel < 40
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType "Large Hybrid"
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 40
+    SetFontSize 28
+Show
+    Class Flask
+    BaseType "Large Hybrid"
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 40
+    AreaLevel < 50
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType "Colossal Hybrid"
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 50
+    SetFontSize 28
+Show
+    Class Flask
+    BaseType "Colossal Hybrid"
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 50
+    AreaLevel < 60
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType "Sacred Hybrid"
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 60
+    SetFontSize 28
+Show
+    Class Flask
+    BaseType "Sacred Hybrid"
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 60
+    AreaLevel < 68
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType "Hallowed Hybrid"
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 68
+    SetFontSize 28
+Show
+    Class Flask
+    BaseType "Hallowed Hybrid"
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 68
+    AreaLevel < 72
+    SetFontSize 18
+
+# Life and Mana Flasks - top 3 for leveling
+Show
+    Class Flask
+    BaseType Small
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 3
+    SetFontSize 30
+Show
+    Class Flask
+    BaseType Small
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 3
+    AreaLevel < 6
+    SetFontSize 24
+Show
+    Class Flask
+    BaseType Small
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 6
+    AreaLevel < 12
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType Medium
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 6
+    SetFontSize 30
+Show
+    Class Flask
+    BaseType Medium
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 6
+    AreaLevel < 12
+    SetFontSize 24
+Show
+    Class Flask
+    BaseType Medium
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 12
+    AreaLevel < 18
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType Large
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 12
+    SetFontSize 30
+Show
+    Class Flask
+    BaseType Large
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 12
+    AreaLevel < 18
+    SetFontSize 24
+Show
+    Class Flask
+    BaseType Large
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 18
+    AreaLevel < 24
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType Greater
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 18
+    SetFontSize 30
+Show
+    Class Flask
+    BaseType Greater
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 18
+    AreaLevel < 24
+    SetFontSize 24
+Show
+    Class Flask
+    BaseType Greater
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 24
+    AreaLevel < 30
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType Grand
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 24
+    SetFontSize 30
+Show
+    Class Flask
+    BaseType Grand
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 24
+    AreaLevel < 30
+    SetFontSize 24
+Show
+    Class Flask
+    BaseType Grand
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 30
+    AreaLevel < 36
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType Giant
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 30
+    SetFontSize 30
+Show
+    Class Flask
+    BaseType Giant
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 30
+    AreaLevel < 36
+    SetFontSize 24
+Show
+    Class Flask
+    BaseType Giant
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 36
+    AreaLevel < 42
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType Colossal
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 36
+    SetFontSize 30
+Show
+    Class Flask
+    BaseType Colossal
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 36
+    AreaLevel < 42
+    SetFontSize 24
+Show
+    Class Flask
+    BaseType Colossal
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 42
+    AreaLevel < 50
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType Sacred
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 42
+    SetFontSize 30
+Show
+    Class Flask
+    BaseType Sacred
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 42
+    AreaLevel < 50
+    SetFontSize 24
+Show
+    Class Flask
+    BaseType Sacred
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 50
+    AreaLevel < 60
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType Hallowed
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 50
+    SetFontSize 30
+Show
+    Class Flask
+    BaseType Hallowed
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 50
+    AreaLevel < 60
+    SetFontSize 24
+Show
+    Class Flask
+    BaseType Hallowed
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 60
+    AreaLevel < 65
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType Sanctified
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 60
+    SetFontSize 30
+Show
+    Class Flask
+    BaseType Sanctified
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 60
+    AreaLevel < 65
+    SetFontSize 24
+Show
+    Class Flask
+    BaseType Sanctified
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 65
+    AreaLevel < 68
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType Divine
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 65
+    SetFontSize 30
+Show
+    Class Flask
+    BaseType Divine
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 65
+    AreaLevel < 68
+    SetFontSize 24
+Show
+    Class Flask
+    BaseType Divine
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 68
+    AreaLevel < 70
+    SetFontSize 18
+Show
+    Class Flask
+    BaseType Eternal
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 1
+    AreaLevel < 68
+    SetFontSize 30
+Show
+    Class Flask
+    BaseType Eternal
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 68
+    AreaLevel < 70
+    SetFontSize 24
+Show
+    Class Flask
+    BaseType Eternal
+    Rarity Normal Magic
+    Quality 0
+    AreaLevel >= 70
+    AreaLevel < 72
+    SetFontSize 18

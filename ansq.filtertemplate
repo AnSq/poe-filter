@@ -1,10 +1,4 @@
 Show
-    Class Amulet
-    ItemLevel 68
-    MinimapIcon 1 Grey UpsideDownHouse
-    Continue
-
-Show
     AnyEnchantment True
     MinimapIcon 2 Cyan Pentagon
     SetBorderColor 150 218 255
@@ -93,14 +87,6 @@ Show
 {delve}
 
 {metamorph}
-
-Show # fractional currency
-    Class Currency
-    BaseType Fragment Shard
-    SetBorderColor 158 153 142
-    SetBackgroundColor 8 8 0 240
-    SetFontSize 24
-    MinimapIcon 2 Yellow Raindrop
 
 Show # unknown currency
     Class Currency
@@ -196,6 +182,11 @@ Show
 
 ### ========== Rare Items ================================================== ###
 
+Show
+    Rarity Rare
+    SetFontSize 28
+    Continue
+
 Show # Neversink's T1 rares
     Sockets < 6
     LinkedSockets < 5
@@ -289,10 +280,6 @@ Show
 Show
     BaseType "Sacrificial Garb"
     SetFontSize 48
-
-Show
-    Class Amulet
-    ItemLevel 68
 
 Hide
     Rarity Normal
@@ -403,12 +390,6 @@ Show
     Height >= 4
     ItemLevel < 20
     SetBorderColor 255 255 255
-    SetFontSize 1
-    SetBackgroundColor 64 64 64 192
-
-Show
-    Class Flask
-    ItemLevel < 20
     SetFontSize 1
     SetBackgroundColor 64 64 64 192
 
