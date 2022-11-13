@@ -82,7 +82,7 @@ Show
     PlayEffect Yellow
 Show
     Class Currency
-    BaseType Divine Ancient Unmaking
+    BaseType Exalted Ancient Unmaking
     SetBorderColor 255 192 45
     SetTextColor 255 192 45
     SetBackgroundColor 50 40 0 240
@@ -92,7 +92,7 @@ Show
     PlayEffect Yellow
 Show
     Class Currency
-    BaseType Mirror Exalted
+    BaseType Mirror Divine
     SetBorderColor 255 192 45
     #SetTextColor 255 192 45
     #SetBackgroundColor 60 30 0 240

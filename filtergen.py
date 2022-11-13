@@ -2,7 +2,7 @@
 
 import requests
 import json
-import re
+import urllib.parse
 import time
 import textwrap
 
@@ -14,13 +14,12 @@ ses.headers.update({"user-agent" : user_agent})
 
 
 def get_current_league():
-    r = ses.get("https://poe.ninja")
-    m = re.search(r'window\.economyLeagues = \[\{"name":"(\w+)","url":"challenge",', r.text)
-    return m.group(1)
+    r = ses.get("https://poe.ninja/api/data/getindexstate")
+    return json.loads(r.text)["economyLeagues"][0]["name"]
 
 
 def poe_ninja_item_overview(league, type_):
-    r = ses.get("https://poe.ninja/api/data/ItemOverview?league={}&type={}&language=en".format(league, type_))
+    r = ses.get(f"https://poe.ninja/api/data/ItemOverview?league={urllib.parse.quote_plus(league)}&type={type_}&language=en")
     return json.loads(r.text)["lines"]
 
 
@@ -105,9 +104,9 @@ def format_levelingflasks_filter(flask_sizes, flask_levels, font_sizes):
 
 def make_divcards(outfile):
     league = get_current_league()
+    print(f"{league} league")
+
     cards = get_cards(league)
-    #for c in cards:
-    #    print(c)
 
     thresholds = (1, 2.4, 6, 15, 40, 100, 250, float("+inf"))
     iconsize = tuple(reversed((2, 2, 1, 1, 0, 0, 0, 0)))
@@ -120,7 +119,7 @@ def make_divcards(outfile):
                 tiers[i].append(c[0])
                 break
     tiers.reverse()
-    print(list(len(t) for t in tiers))
+    print("Cards per tier:", list(len(t) for t in tiers))
 
     members = ['"'+'" "'.join(x)+'"' for x in tiers]
     steps = len(members)
@@ -138,7 +137,7 @@ def make_divcards(outfile):
     num_top = 2
     sounds = [1]*num_top + [4]*(steps - num_top)
 
-    output = "#updated {} ({} league)\n".format(time.strftime("%Y-%m-%d", time.gmtime()), league)
+    output = "# Updated {} ({} league)\n".format(time.strftime("%Y-%m-%d", time.gmtime()), league)
     output += format_divcards_filter(border0, border1, text0, text1, back0, back1, size0, size1, volume0, volume1, steps, iconsize, sounds, members, thresholds, invert=0)
 
     with open(outfile, "w") as w:
@@ -146,21 +145,23 @@ def make_divcards(outfile):
 
 
 def make_levelingflasks(outfile):
-    output = ""
+    output  = "# levelingflasks is automatically generated {\n\n"
 
     flask_sizes   = ('"Small Hybrid"', '"Medium Hybrid"', '"Large Hybrid"', '"Colossal Hybrid"', '"Sacred Hybrid"', '"Hallowed Hybrid"')
     flask_levels  = (10, 20, 30, 40, 50, 60)
     flask_levels += (68, 72)
     font_sizes    = (28, 18)
-    output += "# Hybrid Flasks - top {} for leveling\n".format(len(font_sizes))
+    output += f"# Hybrid Flasks - top {len(font_sizes)} for leveling\n"
     output += format_levelingflasks_filter(flask_sizes, flask_levels, font_sizes)
 
     flask_sizes   = ("Small", "Medium", "Large", "Greater", "Grand", "Giant", "Colossal", "Sacred", "Hallowed", "Sanctified", "Divine", "Eternal")
     flask_levels  = (1, 3, 6, 12, 18, 24, 30, 36, 42, 50, 60, 65)
     flask_levels += (68, 70, 72)
     font_sizes    = (30, 24, 18)
-    output += "\n# Life and Mana Flasks - top {} for leveling\n".format(len(font_sizes))
+    output += f"\n# Life and Mana Flasks - top {len(font_sizes)} for leveling\n"
     output += format_levelingflasks_filter(flask_sizes, flask_levels, font_sizes)
+
+    output += "# } end levelingflasks\n"
 
     with open(outfile, "w") as w:
         w.write(output)

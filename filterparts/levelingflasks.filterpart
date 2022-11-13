@@ -1,3 +1,5 @@
+# levelingflasks is automatically generated {
+
 # Hybrid Flasks - top 2 for leveling
 Show
     Class Flask
@@ -385,3 +387,4 @@ Show
     AreaLevel >= 70
     AreaLevel < 72
     SetFontSize 18
+# } end levelingflasks

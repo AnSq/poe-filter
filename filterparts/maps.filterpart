@@ -1,5 +1,5 @@
 Show
-    Class "Misc Map Items" Region
+    Class "Misc Map Items" "Atlas Upgrade Item" "Map Fragment" Memory
     SetBorderColor 255 255 255
     SetFontSize 40
     MinimapIcon 1 White Circle
