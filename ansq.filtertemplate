@@ -1,4 +1,11 @@
 Show
+    Class == "Relic" "Sanctified Relic"
+    SetFontSize 40
+    MinimapIcon 1 Orange Kite
+    PlayEffect Orange
+    PlayAlertSound 12 300
+
+Show
     AnyEnchantment True
     MinimapIcon 2 Cyan Pentagon
     SetBorderColor 150 218 255
