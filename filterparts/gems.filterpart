@@ -26,5 +26,13 @@ Show
 
 Show
     Class Gem
+    GemLevel >= 2
+    SetFontSize 20
+    SetBorderColor 0 135 255
+
+Hide
+    Class Gem
+    GemLevel 1
+    Quality 0
     SetFontSize 20
     SetBorderColor 0 135 255

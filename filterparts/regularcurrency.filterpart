@@ -52,7 +52,7 @@ Show
     PlayEffect Yellow Temp
 Show
     Class Currency
-    BaseType Alchemy Horizon Bauble
+    BaseType Alchemy Horizon Bauble Enkindling Instilling
     SetBorderColor 219 177 80
     SetTextColor 219 177 80
     SetBackgroundColor 10 10 0 240
@@ -72,7 +72,7 @@ Show
     PlayEffect Yellow
 Show
     Class Currency
-    BaseType Gemcutter Chaos Sextant Deck Harbinger Annulment
+    BaseType Gemcutter Chaos Sextant Deck Harbinger Annulment Unmaking
     SetBorderColor 243 187 56
     SetTextColor 243 187 56
     SetBackgroundColor 10 10 0 240
@@ -82,7 +82,7 @@ Show
     PlayEffect Yellow
 Show
     Class Currency
-    BaseType Exalted Ancient Unmaking
+    BaseType Exalted Ancient Sacred
     SetBorderColor 255 192 45
     SetTextColor 255 192 45
     SetBackgroundColor 50 40 0 240

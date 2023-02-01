@@ -1,6 +1,9 @@
 Show
     Class == "Relic" "Sanctified Relic"
     SetFontSize 40
+    SetBorderColor 249 225 96
+    SetTextColor 249 225 96
+    SetBackgroundColor 50 46 20
     MinimapIcon 1 Orange Kite
     PlayEffect Orange
     PlayAlertSound 12 300
@@ -48,6 +51,53 @@ Show
 Show
     Class "Pantheon Soul"
 
+
+### ========== Rare Items 1 ================================================ ###
+
+Show
+    Rarity Rare
+    SetFontSize 26
+    Continue
+
+Show
+    Rarity Rare
+    Class Helmet
+    SetTextColor 255 255 104
+    Continue
+
+Show
+    Rarity Rare
+    Class "Body Armour"
+    SetTextColor 225 225 167
+    Continue
+
+Show
+    Rarity Rare
+    Class Gloves
+    SetTextColor 225 232 104
+    Continue
+
+Show
+    Rarity Rare
+    Class Boots
+    SetTextColor 225 255 167
+    Continue
+
+Show
+    Rarity Rare
+    Class Axe Mace Sword Staves Wand Bow Claw Dagger Sceptre
+    SetTextColor 255 225 104
+    Continue
+
+Show
+    Rarity Rare
+    Class Shield Quiver
+    SetTextColor 255 225 167
+    Continue
+
+### ======================================================================== ###
+
+
 Show
     HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     SetFontSize 40
@@ -67,6 +117,7 @@ Show
 # atlas base types
 Show
     BaseType "Gripped Gloves" "Vanguard Belt" "Spiked Gloves" "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Fingerless Silk Gloves" "Apothecary's Gloves" "Fugitive Boots" "Convoking Wand" "Artillery Quiver" "Seaglass Amulet" "Iolite Ring" "Cerulean Ring" "Vermillion Ring"
+    Rarity Normal Magic Rare
     SetBorderColor 255 127 128
     SetFontSize 40
 
@@ -108,6 +159,28 @@ Show # unknown currency
 {gems}
 
 
+### ========== Drop-Only Mods ============================================== ###
+
+# Incursion
+Show
+    HasExplicitMod Citaqualotl Guatelitzi Matatl Tacati Topotante Xopec Puhuarte
+    SetBorderColor 255 138 82
+    MinimapIcon 1 Orange UpsideDownHouse
+
+# Delve
+Show
+    HasExplicitMod "Subterranean" "of the Underground"
+    SetBorderColor 10 200 250
+    MinimapIcon 1 Blue UpsideDownHouse
+
+# Betrayal
+Show
+    HasExplicitMod "Aisling's Veil" "Cameria's Veil" "Elreon's Veil" "Gravicius' Veil" "Guff's Veil" "Haku's Veil" "Hillock's Veil" "It That Fled's Veil" "Janus' Veil" "Korell's Veil" "Leo's Veil" "Riker's Veil" "Rin's Veil" "Jorgin's Veil" "Tora's Veil" "Vagan's Veil" "Vorici's Veil" "Catarina's Veil"
+    SetBorderColor 178 167 116
+    MinimapIcon 1 Yellow UpsideDownHouse
+
+
+
 ### ========== Normal Items 1 ============================================== ###
 
 # 20% quality normal items can be traded for quality improvement currency
@@ -133,10 +206,17 @@ Show
     PlayAlertSound 4 300
 
 Show
+    BaseType "Cluster Jewel"
+    Rarity Normal Magic Rare
+    SetBorderColor 0 0 255
+    MinimapIcon 2 Grey Diamond
+    SetFontSize 26
+
+Show
     Class Jewel
     Rarity Normal Magic Rare
     SetBorderColor 0 0 255
-    MinimapIcon 2 Blue Diamond
+    SetFontSize 26
 
 
 ### ========== Maps ======================================================== ###
@@ -187,19 +267,14 @@ Show
     Corrupted False
 
 
-### ========== Rare Items ================================================== ###
-
-Show
-    Rarity Rare
-    SetFontSize 28
-    Continue
+### ========== Rare Items 2 ================================================ ###
 
 Show # Neversink's T1 rares
     Sockets < 6
     LinkedSockets < 5
     Rarity Rare
     BaseType "Ambusher" "Platinum Kris" "Imbued Wand" "Skean" "Ezomyte Dagger" "Titan Gauntlets" "Lion Pelt" "Slink Boots" "Titan Greaves" "Royal Burgonet" "Slink Gloves" "Hubris Circlet" "Titanium Spirit Shield" "Imperial Buckler" "Colossal Tower Shield" "Astral Plate"
-    SetFontSize 38
+    SetFontSize 34
     SetBackgroundColor 25 25 0 240
     #SetBorderColor 100 100 0 240
 
@@ -208,7 +283,7 @@ Show # Neversink's T2 rares
     LinkedSockets < 5
     Rarity Rare
     BaseType "Gemini Claw" "Imperial Claw" "Tornado Wand" "Opal Wand" "Prophecy Wand" "Vaal Rapier" "Harpy Rapier" "Profane Wand" "Jewelled Foil" "Spiraled Foil" "Skean" "Kris" "Demon Dagger" "Vaal Axe" "Coronal Maul" "Harbinger Bow" "Void Sceptre" "Sambar Sceptre" "Siege Axe" "Crusader Boots" "Nightmare Bascinet" "Murder Boots" "Dragonscale Boots" "Vaal Greaves" "Stealth Boots" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Vaal Gauntlets" "Praetor Crown" "Deicide Mask" "Royal Burgonet" "Sinner Tricorne" "Solaris Circlet" "Arcanist Slippers" "Arcanist Gloves" "Mind Cage" "Sorcerer Boots" "Sorcerer Gloves" "Harmonic Spirit Shield" "Supreme Spiked Shield" "Glorious Plate" "Saintly Chainmail" "Spike-Point Arrow Quiver" "Vaal Regalia" "Carnal Armour" "Archon Kite Shield" "Elegant Round Shield" "Pinnacle Tower Shield" "Assassin's Garb"
-    SetFontSize 36
+    SetFontSize 30
     SetBackgroundColor 15 15 0 240
     #SetBorderColor 80 80 0 240
 
@@ -224,7 +299,9 @@ Show
 Show # jewelery
     Rarity Rare
     Class Ring Amulet Belt
-    SetFontSize 34
+    Identified False
+    AnyEnchantment False
+    SetFontSize 28
     SetBackgroundColor 25 25 0 240
     SetBorderColor 0 100 100 240
 

@@ -130,7 +130,7 @@ def make_divcards(outfile):
     back0 = (3, 46, 64)
     back1 = (0, 0, 0)
     size0 = 45
-    size1 = 30
+    size1 = 24
     volume0 = 350
     volume1 = 50
 
