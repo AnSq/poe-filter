@@ -1,9 +1,23 @@
 Show
-    Class "Misc Map Items" "Atlas Upgrade Item" "Map Fragment" Memory
-    SetBorderColor 255 255 255
+    Class "Atlas Upgrade Item"
+    SetBorderColor 74 230 58
     SetFontSize 40
-    MinimapIcon 1 White Circle
-    PlayEffect White
+    MinimapIcon 1 Green Circle
+    PlayEffect Green
+
+Show
+    Class "Map Fragment"
+    SetBorderColor 192 192 192
+    SetFontSize 40
+    MinimapIcon 1 Grey Circle
+    PlayEffect Grey
+
+Show
+    Class "Misc Map Items" Memory
+    SetBorderColor 128 0 128
+    SetFontSize 40
+    MinimapIcon 1 Purple Circle
+    PlayEffect Purple
 
 # White Maps
 Show

@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+from typing import Sequence
+import os
 import requests
 import json
 import urllib.parse
@@ -32,13 +34,13 @@ def get_cards(league):
     return cards
 
 
-def interpolate(start, end, steps):
+def interpolate(start:int, end:int, steps:int) -> list[int]:
     diff = end - start
     step_size = float(diff) / (steps - 1)
     return [int(round(start+step*step_size)) for step in range(steps)]
 
 
-def interpolate_colors(start, end, steps):
+def interpolate_colors(start:Sequence[int], end:Sequence[int], steps:int) -> list[list[int]]:
     diff = [x[0]-x[1] for x in zip(end, start)]
     step_sizes = [float(x)/(steps-1) for x in diff]
     return [[int(round(x[0]+step*x[1])) for x in zip(start, step_sizes)] for step in range(steps)]
@@ -140,8 +142,8 @@ def make_divcards(outfile):
     output = "# Updated {} ({} league)\n".format(time.strftime("%Y-%m-%d", time.gmtime()), league)
     output += format_divcards_filter(border0, border1, text0, text1, back0, back1, size0, size1, volume0, volume1, steps, iconsize, sounds, members, thresholds, invert=0)
 
-    with open(outfile, "w") as w:
-        w.write(output)
+    with open(outfile, "w") as f:
+        f.write(output)
 
 
 def make_levelingflasks(outfile):
@@ -163,13 +165,130 @@ def make_levelingflasks(outfile):
 
     output += "# } end levelingflasks\n"
 
-    with open(outfile, "w") as w:
-        w.write(output)
+    with open(outfile, "w") as f:
+        f.write(output)
+
+
+def make_regularcurrency(outfile):
+    output = ""
+
+    tiers = [
+        ["Orb of Transmutation", "Armourer's Scrap", "Blacksmith's Whetstone"],
+        ["Jeweller's Orb", "Orb of Binding", "Orb of Augmentation", "Engineer's Orb", "Orb of Chance"],
+        ["Orb of Alteration", "Orb of Alchemy", "Chromatic Orb", "Orb of Fusing"],
+        ["Cartographer's Chisel", "Glassblower's Bauble", "Orb of Horizons", "Instilling Orb", "Enkindling Orb"],
+        ["Blessed Orb", "Orb of Scouring", "Orb of Regret"],
+        ["Chaos Orb", "Regal Orb", "Exalted Shard", "Vaal Orb", "Gemcutter's Prism", "Orb of Unmaking", "Annulment Shard", "Harbinger's Orb"],
+        ["Stacked Deck", "Awakened Sextant", "Orb of Annulment", "Veiled Chaos Orb"],
+        ["Exalted Orb", "Ancient Orb", "Sacred Orb", "Fracturing Shard", "Elevated Sextant"],
+        ["Divine Orb", "Fracturing Orb", "Mirror Shard", "Mirror of Kalandra"]
+    ]
+    start_color = (170, 158, 130)
+    end_color = (255, 192, 45)
+    
+    colors = interpolate_colors(start_color, end_color, len(tiers) - 1)
+    colors.append(colors[-1])
+    
+    sizes = interpolate(26, 45, len(tiers) - 1) + [45]
+    volumes = [10, 25, 50, 100, 150, 250, 275, 300, 300]
+    icon_sizes = [None, None, 2, 2, 2, 1, 1, 0, 0]
+    effect = [None, None, 1, 1, 0, 0, 0, 0, 0]
+
+    for i in range(len(tiers)):
+        members = '"' + '" "'.join(tiers[i]) + '"'
+        color = " ".join(str(x) for x in colors[i])
+        border_color = color
+        sound = 3
+        icon_color = "Yellow"
+
+        if i == len(tiers) - 2:
+            background_color = "50 40 0 240"
+        elif i == len(tiers) - 1:
+            background_color = color + " 240"
+            color = "74 10 60"
+            border_color = "240 0 160"
+            sound = 1
+            icon_color = "Pink"
+        else:
+            background_color = "10 10 0 240"
+
+        output += textwrap.dedent(f"""\
+            Show
+                Class Currency
+                BaseType == {members}
+                SetBorderColor {border_color}
+                SetTextColor {color}
+                SetBackgroundColor {background_color}
+                SetFontSize {sizes[i]}
+                PlayAlertSound {sound} {volumes[i]}
+                """)
+        
+        if icon_sizes[i] is not None:
+            output += f"    MinimapIcon {icon_sizes[i]} {icon_color} Star\n"
+        
+        if effect[i] is not None:
+            output += f"    PlayEffect {icon_color}{' Temp' if effect[i] else ''}\n"
+
+    with open(outfile, "w") as f:
+        f.write(output)
+
+
+def make_currencyshards(outfile):
+    output = ""
+
+    tiers = [
+        ["Scroll Fragment"],
+        ["Transmutation Shard"],
+        ["Binding Shard", "Engineer's Shard"],
+        ["Alteration Shard", "Alchemy Shard"],
+        ["Horizon Shard"],
+        ["Regal Shard", "Chaos Shard", "Harbinger's Shard"],
+        ["Ancient Shard"]
+    ]
+    start_color = (153, 142, 117, 200)
+    end_color = (152, 147, 135, 250)
+    colors = interpolate_colors(start_color, end_color, len(tiers))
+
+    start_back = (5, 5, 0, 180)
+    end_back = (15, 10, 5, 220)
+    background_colors = interpolate_colors(start_back, end_back, len(tiers))
+
+    sizes = interpolate(18, 36, len(tiers))
+    volumes = [None, None, 10, 20, 30, 40, 50]
+    icon_sizes = [None, None, None, 2, 2, 1, 1]
+
+    for i in range(len(tiers)):
+        members = '"' + '" "'.join(tiers[i]) + '"'
+        color = " ".join(str(x) for x in colors[i])
+        back = " ".join(str(x) for x in background_colors[i])
+
+        output += textwrap.dedent(f"""\
+            Show
+                Class Currency
+                BaseType == {members}
+                SetBorderColor {color}
+                SetTextColor {color}
+                SetBackgroundColor {back}
+                SetFontSize {sizes[i]}
+                """)
+        
+        if volumes[i] is not None:
+            output += f"    PlayAlertSound 3 {volumes[i]}\n"
+
+        if icon_sizes[i] is not None:
+            output += f"    MinimapIcon {icon_sizes[i]} Yellow Cross\n"
+
+    with open(outfile, "w") as f:
+        f.write(output)
 
 
 def main():
-    make_divcards("filterparts/divcards.filterpart")
-    make_levelingflasks("filterparts/levelingflasks.filterpart")
+    output_base = "filterparts/generated/"
+    os.makedirs(output_base, exist_ok=True)
+    make_divcards(output_base + "divcards.filterpart")
+    make_levelingflasks(output_base + "leveling_flasks.filterpart")
+    make_regularcurrency(output_base + "regular_currency.filterpart")
+    make_currencyshards(output_base + "currency_shards.filterpart")
 
 if __name__ == "__main__":
     main()

@@ -108,7 +108,7 @@ Show
     Class "Abyss Jewel"
     SetFontSize 35
     SetBorderColor 0 100 0
-    MinimapIcon 2 Blue Diamond
+
 Show
     BaseType "Stygian Vise"
     SetFontSize 35
@@ -124,7 +124,19 @@ Show
 
 ### ========== Currency ==================================================== ###
 
-{regularcurrency}
+Show
+    Class Currency
+    BaseType == "Scroll of Wisdom" "Portal Scroll"
+    SetBorderColor 170 158 130
+    SetTextColor 170 158 130
+    SetBackgroundColor 10 10 0 160
+    SetFontSize 20
+
+{eldritch_currency}
+
+{regular_currency}
+
+{currency_shards}
 
 {essence}
 

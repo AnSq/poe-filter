@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import os
+
 import filtergen
 
 template_fname = "ansq.filtertemplate"
@@ -11,7 +13,11 @@ def process_line(line, output_f):
         output_f.write(line)
     else:
         partname = line.strip()[1:-1]
-        part_fname = f"filterparts/{partname}.filterpart"
+        generated_part_fname = f"filterparts/generated/{partname}.filterpart"
+        if os.path.isfile(generated_part_fname):
+            part_fname = generated_part_fname
+        else:
+            part_fname = f"filterparts/{partname}.filterpart"
         print(f"Part: {part_fname}")
         with open(part_fname) as part_f:
             for part_line in part_f:

@@ -1,0 +1,58 @@
+Show
+    Class Currency
+    BaseType == "Scroll Fragment"
+    SetBorderColor 153 142 117 200
+    SetTextColor 153 142 117 200
+    SetBackgroundColor 5 5 0 180
+    SetFontSize 18
+Show
+    Class Currency
+    BaseType == "Transmutation Shard"
+    SetBorderColor 153 143 120 208
+    SetTextColor 153 143 120 208
+    SetBackgroundColor 7 6 1 187
+    SetFontSize 21
+Show
+    Class Currency
+    BaseType == "Binding Shard" "Engineer's Shard"
+    SetBorderColor 153 144 123 217
+    SetTextColor 153 144 123 217
+    SetBackgroundColor 8 7 2 193
+    SetFontSize 24
+    PlayAlertSound 3 10
+Show
+    Class Currency
+    BaseType == "Alteration Shard" "Alchemy Shard"
+    SetBorderColor 152 144 126 225
+    SetTextColor 152 144 126 225
+    SetBackgroundColor 10 8 2 200
+    SetFontSize 27
+    PlayAlertSound 3 20
+    MinimapIcon 2 Yellow Cross
+Show
+    Class Currency
+    BaseType == "Horizon Shard"
+    SetBorderColor 152 145 129 233
+    SetTextColor 152 145 129 233
+    SetBackgroundColor 12 8 3 207
+    SetFontSize 30
+    PlayAlertSound 3 30
+    MinimapIcon 2 Yellow Cross
+Show
+    Class Currency
+    BaseType == "Regal Shard" "Chaos Shard" "Harbinger's Shard"
+    SetBorderColor 152 146 132 242
+    SetTextColor 152 146 132 242
+    SetBackgroundColor 13 9 4 213
+    SetFontSize 33
+    PlayAlertSound 3 40
+    MinimapIcon 1 Yellow Cross
+Show
+    Class Currency
+    BaseType == "Ancient Shard"
+    SetBorderColor 152 147 135 250
+    SetTextColor 152 147 135 250
+    SetBackgroundColor 15 10 5 220
+    SetFontSize 36
+    PlayAlertSound 3 50
+    MinimapIcon 1 Yellow Cross

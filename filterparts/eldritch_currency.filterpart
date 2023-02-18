@@ -1,0 +1,54 @@
+# Background Color
+Show
+    Class Currency
+    BaseType "Eldritch Ichor"
+    SetBackgroundColor 15 40 40 240
+    Continue
+Show
+    Class Currency
+    BaseType "Eldritch Ember"
+    SetBackgroundColor 40 15 15 240
+    Continue
+Show
+    Class Currency
+    BaseType == "Eldritch Orb of Annulment" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Orb of Conflict"
+    SetBackgroundColor 40 15 40 240
+    Continue
+
+# Size and Volume
+Show
+    Class Currency
+    BaseType "Lesser Eldritch"
+    SetFontSize 31
+    PlayAlertSound 3 100
+    MinimapIcon 2 Red Star
+    Continue
+Show
+    Class Currency
+    BaseType "Greater Eldritch"
+    SetFontSize 40
+    PlayAlertSound 3 250
+    MinimapIcon 1 Red Star
+    Continue
+Show
+    Class Currency
+    BaseType "Grand Eldritch"
+    SetFontSize 42
+    PlayAlertSound 3 275
+    MinimapIcon 1 Red Star
+    Continue
+Show
+    Class Currency
+    BaseType == "Exceptional Eldritch Ichor" "Exceptional Eldritch Ember" "Eldritch Orb of Annulment" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Orb of Conflict"
+    SetFontSize 45
+    PlayAlertSound 3 300
+    MinimapIcon 0 Red Star
+    Continue
+
+# Border, Text Color, and Effect
+Show
+    Class Currency
+    BaseType Eldritch "Orb of Conflict"
+    SetBorderColor 74 221 234
+    SetTextColor 195 63 50
+    PlayEffect Cyan

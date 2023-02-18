@@ -1,0 +1,86 @@
+Show
+    Class Currency
+    BaseType == "Orb of Transmutation" "Armourer's Scrap" "Blacksmith's Whetstone"
+    SetBorderColor 170 158 130
+    SetTextColor 170 158 130
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 26
+    PlayAlertSound 3 10
+Show
+    Class Currency
+    BaseType == "Jeweller's Orb" "Orb of Binding" "Orb of Augmentation" "Engineer's Orb" "Orb of Chance"
+    SetBorderColor 182 163 118
+    SetTextColor 182 163 118
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 29
+    PlayAlertSound 3 25
+Show
+    Class Currency
+    BaseType == "Orb of Alteration" "Orb of Alchemy" "Chromatic Orb" "Orb of Fusing"
+    SetBorderColor 194 168 106
+    SetTextColor 194 168 106
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 31
+    PlayAlertSound 3 50
+    MinimapIcon 2 Yellow Star
+    PlayEffect Yellow Temp
+Show
+    Class Currency
+    BaseType == "Cartographer's Chisel" "Glassblower's Bauble" "Orb of Horizons" "Instilling Orb" "Enkindling Orb"
+    SetBorderColor 206 173 94
+    SetTextColor 206 173 94
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 34
+    PlayAlertSound 3 100
+    MinimapIcon 2 Yellow Star
+    PlayEffect Yellow Temp
+Show
+    Class Currency
+    BaseType == "Blessed Orb" "Orb of Scouring" "Orb of Regret"
+    SetBorderColor 219 177 81
+    SetTextColor 219 177 81
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 37
+    PlayAlertSound 3 150
+    MinimapIcon 2 Yellow Star
+    PlayEffect Yellow
+Show
+    Class Currency
+    BaseType == "Chaos Orb" "Regal Orb" "Exalted Shard" "Vaal Orb" "Gemcutter's Prism" "Orb of Unmaking" "Annulment Shard" "Harbinger's Orb"
+    SetBorderColor 231 182 69
+    SetTextColor 231 182 69
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 40
+    PlayAlertSound 3 250
+    MinimapIcon 1 Yellow Star
+    PlayEffect Yellow
+Show
+    Class Currency
+    BaseType == "Stacked Deck" "Awakened Sextant" "Orb of Annulment" "Veiled Chaos Orb"
+    SetBorderColor 243 187 57
+    SetTextColor 243 187 57
+    SetBackgroundColor 10 10 0 240
+    SetFontSize 42
+    PlayAlertSound 3 275
+    MinimapIcon 1 Yellow Star
+    PlayEffect Yellow
+Show
+    Class Currency
+    BaseType == "Exalted Orb" "Ancient Orb" "Sacred Orb" "Fracturing Shard" "Elevated Sextant"
+    SetBorderColor 255 192 45
+    SetTextColor 255 192 45
+    SetBackgroundColor 50 40 0 240
+    SetFontSize 45
+    PlayAlertSound 3 300
+    MinimapIcon 0 Yellow Star
+    PlayEffect Yellow
+Show
+    Class Currency
+    BaseType == "Divine Orb" "Fracturing Orb" "Mirror Shard" "Mirror of Kalandra"
+    SetBorderColor 240 0 160
+    SetTextColor 74 10 60
+    SetBackgroundColor 255 192 45 240
+    SetFontSize 45
+    PlayAlertSound 1 300
+    MinimapIcon 0 Pink Star
+    PlayEffect Pink
