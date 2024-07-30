@@ -6,7 +6,7 @@ Show
     SetBorderColor 255 0 0
 
 Show
-    Class "Utility Flask"
+    Class "Utility Flask" "Tincture"
     Rarity Normal Magic
     SetBorderColor 0 190 0
     SetBackgroundColor 0 50 0 240

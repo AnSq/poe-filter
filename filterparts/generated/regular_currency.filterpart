@@ -56,7 +56,7 @@ Show
     PlayEffect Yellow
 Show
     Class Currency
-    BaseType == "Stacked Deck" "Awakened Sextant" "Orb of Annulment" "Veiled Chaos Orb"
+    BaseType == "Stacked Deck" "Awakened Sextant" "Orb of Annulment"
     SetBorderColor 243 187 57
     SetTextColor 243 187 57
     SetBackgroundColor 10 10 0 240
@@ -76,7 +76,7 @@ Show
     PlayEffect Yellow
 Show
     Class Currency
-    BaseType == "Divine Orb" "Fracturing Orb" "Mirror Shard" "Mirror of Kalandra"
+    BaseType == "Divine Orb" "Veiled Orb" "Reflecting Mist" "Fracturing Orb" "Hinekora's Lock" "Mirror Shard" "Mirror of Kalandra"
     SetBorderColor 240 0 160
     SetTextColor 74 10 60
     SetBackgroundColor 255 192 45 240

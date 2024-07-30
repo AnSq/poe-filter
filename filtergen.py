@@ -179,16 +179,16 @@ def make_regularcurrency(outfile):
         ["Cartographer's Chisel", "Glassblower's Bauble", "Orb of Horizons", "Instilling Orb", "Enkindling Orb"],
         ["Blessed Orb", "Orb of Scouring", "Orb of Regret"],
         ["Chaos Orb", "Regal Orb", "Exalted Shard", "Vaal Orb", "Gemcutter's Prism", "Orb of Unmaking", "Annulment Shard", "Harbinger's Orb"],
-        ["Stacked Deck", "Awakened Sextant", "Orb of Annulment", "Veiled Chaos Orb"],
+        ["Stacked Deck", "Awakened Sextant", "Orb of Annulment"],
         ["Exalted Orb", "Ancient Orb", "Sacred Orb", "Fracturing Shard", "Elevated Sextant"],
-        ["Divine Orb", "Fracturing Orb", "Mirror Shard", "Mirror of Kalandra"]
+        ["Divine Orb", "Veiled Orb", "Reflecting Mist", "Fracturing Orb", "Hinekora's Lock", "Mirror Shard", "Mirror of Kalandra"]
     ]
     start_color = (170, 158, 130)
     end_color = (255, 192, 45)
-    
+
     colors = interpolate_colors(start_color, end_color, len(tiers) - 1)
     colors.append(colors[-1])
-    
+
     sizes = interpolate(26, 45, len(tiers) - 1) + [45]
     volumes = [10, 25, 50, 100, 150, 250, 275, 300, 300]
     icon_sizes = [None, None, 2, 2, 2, 1, 1, 0, 0]
@@ -222,10 +222,10 @@ def make_regularcurrency(outfile):
                 SetFontSize {sizes[i]}
                 PlayAlertSound {sound} {volumes[i]}
                 """)
-        
+
         if icon_sizes[i] is not None:
             output += f"    MinimapIcon {icon_sizes[i]} {icon_color} Star\n"
-        
+
         if effect[i] is not None:
             output += f"    PlayEffect {icon_color}{' Temp' if effect[i] else ''}\n"
 
@@ -271,7 +271,7 @@ def make_currencyshards(outfile):
                 SetBackgroundColor {back}
                 SetFontSize {sizes[i]}
                 """)
-        
+
         if volumes[i] is not None:
             output += f"    PlayAlertSound 3 {volumes[i]}\n"
 
