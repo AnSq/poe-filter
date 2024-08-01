@@ -1,5 +1,9 @@
 Show
     Class == Gold
+    SetFontSize 18
+    SetBorderColor 255 215 0
+    SetTextColor 255 215 0
+    MinimapIcon 2 Yellow Pentagon
 
 Show
     Class == "Relic"
