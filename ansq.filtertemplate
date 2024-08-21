@@ -320,6 +320,7 @@ Show # Neversink's T2 rares
 Show
     BaseType "Breach Ring"
     SetBorderColor 193 1 255
+    MinimapIcon 2 Purple Pentagon
 
 Show
     BaseType Talisman
