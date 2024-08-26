@@ -6,6 +6,16 @@ Show
     MinimapIcon 2 Yellow Pentagon
 
 Show
+    HasSearingExarchImplicit >= 3
+    SetBorderColor 195 63 50
+    Continue
+
+Show
+    HasEaterOfWorldsImplicit >= 3
+    SetBorderColor 74 221 234
+    Continue
+
+Show
     Class == "Relic"
     SetFontSize 40
     SetBorderColor 249 225 96
@@ -101,6 +111,49 @@ Show
     Class Shield Quiver
     SetTextColor 255 225 167
     Continue
+
+Hide # low level basetypes in T14+
+    AreaLevel >= 81
+    Rarity Rare
+    Class Helmet "Body Armour" Gloves Boots Axe Mace Sword Staves Wand Bow Claw Dagger Sceptre Shield Quiver
+    DropLevel < 68
+    Sockets < 6
+    HasInfluence None
+    Quality < 20
+    Sockets < 1W
+    AnyEnchantment False
+    CorruptedMods 0
+    Mirrored False
+    HasSearingExarchImplicit <= 1
+    HasEaterOfWorldsImplicit <= 1
+    FracturedItem False
+    SynthesisedItem False
+    HasCruciblePassiveTree False
+    SetFontSize 18
+    SetBackgroundColor 64 64 64 64
+
+Hide # same as above, but it works for Kingsmarch rewards (area level 1)
+    AreaLevel = 1
+    Rarity Rare
+    Class Helmet "Body Armour" Gloves Boots Axe Mace Sword Staves Wand Bow Claw Dagger Sceptre Shield Quiver
+    DropLevel < 68
+    DropLevel > 10
+    Sockets < 6
+    HasInfluence None
+    Quality < 20
+    Sockets < 1W
+    AnyEnchantment False
+    CorruptedMods 0
+    Mirrored False
+    HasSearingExarchImplicit <= 1
+    HasEaterOfWorldsImplicit <= 1
+    FracturedItem False
+    SynthesisedItem False
+    HasCruciblePassiveTree False
+    SetFontSize 18
+    SetBackgroundColor 64 64 64 64
+
+
 
 ### ======================================================================== ###
 
