@@ -128,6 +128,7 @@ Hide # low level basetypes in T14+
     HasEaterOfWorldsImplicit <= 1
     FracturedItem False
     SynthesisedItem False
+    HasExplicitMod != Veil
     HasCruciblePassiveTree False
     SetFontSize 18
     SetBackgroundColor 64 64 64 64
@@ -149,6 +150,7 @@ Hide # same as above, but it works for Kingsmarch rewards (area level 1)
     HasEaterOfWorldsImplicit <= 1
     FracturedItem False
     SynthesisedItem False
+    HasExplicitMod != Veil
     HasCruciblePassiveTree False
     SetFontSize 18
     SetBackgroundColor 64 64 64 64
