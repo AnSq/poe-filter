@@ -6,6 +6,20 @@ Show
     MinimapIcon 2 Yellow Pentagon
 
 Show
+    Class == Helmet "Body Armour" Gloves Boots Shield
+    BaseDefencePercentile 100
+    SetBorderColor 230 60 130
+    PlayEffect Grey Temp
+    Continue
+
+Show
+    Class == Helmet "Body Armour" Gloves Boots Shield
+    BaseDefencePercentile 100
+    DropLevel >= 68
+    MinimapIcon 1 Green Hexagon
+    Continue
+
+Show
     HasSearingExarchImplicit >= 3
     SetBorderColor 195 63 50
     Continue
@@ -467,6 +481,7 @@ Hide
 Show
     Sockets = 6
     LinkedSockets < 5
+    BaseDefencePercentile < 100
     SetFontSize 42
     SetBorderColor 100 250 80
     PlayAlertSound 7 300
@@ -526,6 +541,10 @@ Show
 
 
 ### ========== Everything Else ============================================= ###
+
+Show
+    Class == Helmet "Body Armour" Gloves Boots Shield
+    BaseDefencePercentile 100
 
 Show
     Corrupted True
