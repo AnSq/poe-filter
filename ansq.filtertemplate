@@ -542,6 +542,14 @@ Show
 
 ### ========== Everything Else ============================================= ###
 
+Hide
+    Class == Helmet "Body Armour" Gloves Boots Shield
+    BaseDefencePercentile 100
+    AreaLevel >= 81
+    DropLevel < 68
+    SetBackgroundColor 64 64 64 64
+    SetFontSize 1
+
 Show
     Class == Helmet "Body Armour" Gloves Boots Shield
     BaseDefencePercentile 100
