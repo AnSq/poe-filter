@@ -455,7 +455,7 @@ Show
     PlayEffect Brown
 
 Show
-    Class "Quest Items" Labyrinth "Sanctum Research" Corpse
+    Class "Quest Items" Labyrinth Corpse
     SetFontSize 40
 
 

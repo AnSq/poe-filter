@@ -6,17 +6,38 @@ Show
     PlayEffect Green
 
 Show
-    Class "Map Fragment" Breachstone
+    Class "Misc Map Items" Memory "Vault Key" Breachstone "Sanctum Research"
+    SetBorderColor 0 128 128
+    SetFontSize 40
+    MinimapIcon 1 Cyan Circle
+    PlayEffect Cyan
+
+# Fragments that work more like Misc Map Items (you only need one in the map device)
+Show
+    Class "Map Fragment"
+    BaseType "The Maven's Writ" "Sacred Blossom" "Simulacrum" "An Audience With The King"
+    SetBorderColor 0 128 128
+    SetFontSize 40
+    MinimapIcon 1 Cyan Circle
+    PlayEffect Cyan
+
+# other fragments (muiltiple are required to open portals)
+Show
+    Class "Map Fragment"
     SetBorderColor 192 192 192
     SetFontSize 40
     MinimapIcon 1 Grey Circle
     PlayEffect Grey
 
+# Purple Maps
 Show
-    Class "Misc Map Items" Memory "Vault Key"
-    SetBorderColor 128 0 128
+    Class Map
+    MapTier >= 17
+    Rarity Normal Magic Rare
+    SetBorderColor 105 20 232
     SetFontSize 40
-    MinimapIcon 1 Purple Circle
+    MinimapIcon 0 Purple Circle
+    PlayAlertSound 16 150
     PlayEffect Purple
 
 # White Maps
