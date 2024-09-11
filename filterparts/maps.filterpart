@@ -29,6 +29,15 @@ Show
     MinimapIcon 1 Grey Circle
     PlayEffect Grey
 
+# Influenced maps
+Show
+    Class Map
+    HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    SetFontSize 40
+    SetBorderColor 0 180 220
+    MinimapIcon 0 Cyan Circle
+    PlayEffect Cyan
+
 # Purple Maps
 Show
     Class Map
